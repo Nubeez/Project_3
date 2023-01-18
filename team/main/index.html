@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="css/script_main.js"></script>
@@ -37,11 +41,11 @@
                 </div>
             </div>
         </div>
-        <div class="section1" style="background:coral;">
+        <section id="section1 page" style="background:coral;">
             <div class="title">
                 <h1>MOMENT</h1>
             </div>
-            <div>
+            <div class="grid">
                 <ul class="momentNav">
                     <li>
                         <a href="">
@@ -55,14 +59,16 @@
                         <a href="">
                             <p>Activities</p>
                             <div class="li_img">
-                                <img src="img/menu/palau_menu(3).jpg" alt=""></div>
+                                <img src="img/menu/palau_menu(3).jpg" alt="">
+                            </div>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <p>Cultural</p>
                             <div class="li_img">
-                                <img src="img/menu/palau_menu(3).jpg" alt=""></div>
+                                <img src="img/menu/palau_menu(3).jpg" alt="">
+                            </div>
                         </a>
                     </li>
                     <li>
@@ -70,7 +76,8 @@
                             <p>EAT
                             </p>
                             <div class="li_img">
-                                <img src="img/menu/palau_menu(4).jpg" alt=""></div>
+                                <img src="img/menu/palau_menu(4).jpg" alt="">
+                            </div>
                         </a>
                     </li>
                     <li>
@@ -83,8 +90,37 @@
                     </li>
                 </ul>
             </div>
-        </div>
-
+            <div class="title">
+                <h1>CATEGORY</h1>
+            </div>
+            <!-- <img src="img/palau(1).jpg" alt=""> -->
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section id="section2">
+            <div id="slide_wraps">
+                <div class="page" style="background:black;">01</div>
+                <div class="page" style="background:blueviolet;">02</div>
+                <div class="page" style="background:brown;">03</div>
+                <div class="page" style="background:darkgreen;">04</div>
+                <div class="page" style="background:darkblue;">05</div>
+            </div>
+        </section>
     </div>
 </body>
 
