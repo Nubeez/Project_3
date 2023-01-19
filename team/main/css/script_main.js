@@ -22,16 +22,42 @@ $(function () {
     $(".slide li")
       .eq(i + 1)
       .css({ zIndex: 1 });
+
+    // 페이지 번호
+    $(".slideInner1").eq(i).addClass("view");
+
+    $(".slideInner1")
+      .eq(i - 1)
+      .removeClass("view");
+
+    $(".txt_hide").eq(i).addClass("view");
+
+    $(".txt_hide")
+      .eq(i - 1)
+      .removeClass("view");
+
+    //메인 타이틀 내용
+    $(".slideInner1").eq(i).addClass("view2");
+
+    $(".slideInner1")
+      .eq(i - 1)
+      .removeClass("view2");
+
+    $(".txt_hide").eq(i).addClass("view2");
+
+    $(".txt_hide")
+      .eq(i - 1)
+      .removeClass("view2");
   }
 
   setInterval(slide, 5000);
-  
+
   // Initialize Swiper
   var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
     spaceBetween: 30,
-    slidesPerGroup: 3,
-    loop: true,
+    slidesPerGroup: 1,
+    loop: false,
     loopFillGroupWithBlank: true,
     pagination: {
       el: ".swiper-pagination",
