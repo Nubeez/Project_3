@@ -19,14 +19,12 @@ html,
 body {
   position: relative;
   height: 100%;
-  font-family: 'locus_sangsang';
-  /* font-family: 'NEXON Lv2 Gothic'; */
+  font-family: "locus_sangsang";
 }
 
 body {
-  background: #eee;
+  background: #434343;
   font-size: 14px;
-  color: #000;
   margin: 0;
   padding: 0;
 }
@@ -179,6 +177,7 @@ li {
 
 #section1 {
   width: 90%;
+  height: 1500px;
 }
 
 .title {
@@ -188,6 +187,7 @@ li {
 .title h1 {
   padding: 30px;
   font-size: 1.5vw;
+  color: white;
 }
 
 .grid {
@@ -250,7 +250,7 @@ li {
 .slideInner1 {
   position: absolute;
   transition: all 0.5s;
-  font-family: 'YESGothic-Regular';
+  font-family: "YESGothic-Regular";
   transform: rotateY(0deg);
   transform-origin: 50% 50%;
   border: none;
@@ -260,7 +260,7 @@ li {
 #slideInner2 {
   position: absolute;
   bottom: 44%;
-  font-family: 'YESGothic-Regular';
+  font-family: "YESGothic-Regular";
 }
 
 .slideInner1:after {
@@ -279,15 +279,22 @@ li {
 }
 
 /* 섹션1 하단 슬라이드 시작 */
+.swiperBg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 .swiper {
   width: 98%;
   height: 100%;
+  /* position: relative; */
+  z-index: 0;
+  overflow: hidden;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -303,10 +310,78 @@ li {
   -webkit-align-items: center;
   align-items: center;
 }
-
 .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.category {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-flow: column;
+}
+.category_title {
+  width: 100%;
+  height: 10vh;
+  margin-top: 10px;
+  text-align: left;
+  color: white;
+}
+/* 버튼 크기 조절해야함 */
+.category_info {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 15%;
+  right: 1%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.on {
+  background-color: black;
+  border-color: gold;
+  transform: scale(1.1);
+}
+.on:active::before {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  content: " ";
+  transition: all 5s;
+  background-color: rgba(255, 0, 0);
+}
+
+.on:active::before {
+  width: 0%;
+}
+.category_info img {
+  width: 100%;
+}
+/* .swiper-button-prev::after, */
+.swiper-button-next::after {
+  display: none;
+}
+.button-next img {
+  width: 2%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-100%, -150%);
+}
+.button-prev img {
+  width: 2%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-250%, -154%);
 }

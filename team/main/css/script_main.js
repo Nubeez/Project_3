@@ -2,6 +2,7 @@ $(function () {
   var i = 0;
   var w = window.innerWidth;
 
+  // 슬라이드
   function slide() {
     i++;
 
@@ -60,12 +61,21 @@ $(function () {
     loop: false,
     loopFillGroupWithBlank: true,
     pagination: {
-      el: ".swiper-pagination",
+      //   el: ".swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".button-next",
+      prevEl: ".button-prev",
     },
+  });
+
+  // 마우스오버,아웃 클래스추가
+  $(".category").mouseover(function () {
+    $(this).find(".category_info").addClass("on");
+  });
+
+  $(".category").mouseout(function () {
+    $(this).find(".category_info").removeClass("on");
   });
 });
