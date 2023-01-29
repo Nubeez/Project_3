@@ -385,3 +385,19 @@ li {
   right: 0;
   transform: translate(-250%, -154%);
 }
+.rolling_warp {
+  width: 100%;
+  height: 100px;
+  background: skyblue;
+}
+.roll_list {
+  width: 100%;
+  height: 10px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.roll_list > li {
+    font-size: 15pt;
+}

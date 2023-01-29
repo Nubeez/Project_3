@@ -78,4 +78,5 @@ $(function () {
   $(".category").mouseout(function () {
     $(this).find(".category_info").removeClass("on");
   });
+  
 });
