@@ -90,12 +90,12 @@ $(function () {
     const $list = $(".flow_wrap .flow_list");
     let wrapWidth = $wrap.width();
     let listWidth = $list.width();
-    const speed =200; //1초에 몇픽셀 이동하는지 설정
+    const speed = 200; //1초에 몇픽셀 이동하는지 설정
 
     //리스트 복제
     let $clone = $list.clone();
     $wrap.append($clone);
-    flowBannerAct()
+    flowBannerAct();
 
     //배너 실행 함수
     function flowBannerAct() {
@@ -112,4 +112,10 @@ $(function () {
       });
     }
   }
+  $(".button-next").click(function () {
+    $(".button-prev").removeClass("disabled");
+    if ($(".swiper-slide").hasClass("prev_one") == "true") {
+      $(".button-prev").removeClass("disabled");
+    }
+  });
 });

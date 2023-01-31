@@ -3,17 +3,6 @@
   margin: 0;
   padding: 0;
 }
-/* 구간 나눠둔 css */
-#slide_wraps .page {
-  width: 100%;
-  height: 100vh;
-  padding: 100px;
-  font-size: 70px;
-  text-align: center;
-  box-sizing: border-box;
-  color: #fff;
-}
-
 /* 폰트넣기 */
 html,
 body {
@@ -176,8 +165,8 @@ li {
 }
 
 #section1 {
-  width: 90%;
-  height: 1500px;
+  width: 100%;
+  height: 100%;
 }
 
 .title {
@@ -251,7 +240,7 @@ li {
 .slideInner1 {
   position: absolute;
   transition: all 0.5s;
-  font-family: "YESGothic-Regular";
+  font-family: "GmarketSansMedium";
   transform: rotateY(0deg);
   transform-origin: 50% 50%;
   border: none;
@@ -261,10 +250,10 @@ li {
 #slideInner2 {
   position: absolute;
   bottom: 44%;
-  font-family: "YESGothic-Regular";
+  font-family: "GmarketSansMedium";
 }
 
-.slideInner1:after {
+.slideInner1::after {
   content: " ";
   position: absolute;
   top: 0;
@@ -273,8 +262,8 @@ li {
   height: 100%;
   height: 1px;
   top: auto;
-  bottom: -4px;
-  left: 0;
+  bottom: -1px;
+  left: 0px;
   background-color: white;
   opacity: 0.5;
 }
@@ -314,7 +303,6 @@ li {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 .category {
@@ -325,6 +313,10 @@ li {
   align-items: center;
   justify-items: center;
   flex-flow: column;
+}
+.category_img {
+  width: 100px;
+  height: 304px;
 }
 .category_title {
   width: 100%;
@@ -368,10 +360,12 @@ li {
 .category_info img {
   width: 100%;
 }
-/* .swiper-button-prev::after, */
+
+/* .swiper-button-prev::after,
 .swiper-button-next::after {
   display: none;
-}
+} */
+
 .button-next img {
   width: 2%;
   position: absolute;
@@ -386,17 +380,24 @@ li {
   right: 0;
   transform: translate(-250%, -154%);
 }
-
+.disabled {
+  opacity: 0.2;
+}
 #section2 {
   width: 100%;
+  background-color: rgb(59, 59, 59);
 }
 
 .flow_wrap {
-  width: 70%;
+  width: 90%;
   height: 150px;
   position: relative;
   overflow: hidden;
   display: flex;
+  color: white;
+}
+.flow_wrap2 {
+  margin: 50px;
 }
 
 .flow_list {
@@ -454,7 +455,7 @@ li {
 }
 .new_wrap {
   width: 100%;
-  height: 350px;
+  height: 450px;
 }
 .All_New {
   width: 100px;
@@ -478,6 +479,7 @@ li {
   margin-left: 29px;
 }
 .new_img {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -520,35 +522,90 @@ li {
 .scroll_bg img {
   width: 100%;
   height: 100%;
+  opacity: 0.7;
 }
 .scroll_text {
   width: 50%;
   display: flex;
   justify-content: flex-start;
   position: absolute;
-  top: 50%;
+  top: 5%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 100%);
   z-index: 10;
 }
 .scroll_text h1 {
-  font-size: 5vw;
+  font-size: 6vw;
   color: white;
-  font-family: 'YESGothic-Regular';
+  font-family: "YESGothic-Regular";
 }
-
-.okd {
-  width: 100%;
+/* 하단 소개글 미디어쿼리별 사이즈조절해야함 */
+.scroll_text2 {
+  width: 50%;
+  max-width: 500px;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(100%, -50%);
   z-index: 10;
 }
 
-.okd li {
-    font-size: 2vw;
-    color: white;
-  }
+.scroll_text2 li {
+  font-family: "YESGothic-Regular";
+  color: white;
+  font-size: 1.8vw;
+  margin-bottom: 50px;
+}
+#section3 {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.footerBanner_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footerBanner {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.footerBanner_img {
+  width: 100%;
+  opacity: 0.8;
+}
+.footerBaneer_tx1 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0%, -50%);
+  color: white;
+}
+.footerBaneer_tx2 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0%, -50%);
+  color: white;
+}
+.footerBaneer_tx1 h1 {
+  font-size: 2vw;
+  line-height: 100px;
+}
+.footerBaneer_tx1 h4 {
+  font-size: 1.5vw;
+  line-height: 100px;
+}
+.footerBaneer_tx1 span {
+  width: 100px;
+  display: block;
+  border: 2px solid white;
+  border-radius: 50px;
+  padding: 10px 0px 10px 10px;
+}
+.footerBaneer_tx2 span {
+  width: 180px;
+}
