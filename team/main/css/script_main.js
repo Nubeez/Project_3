@@ -49,6 +49,12 @@ $(function () {
     $(".txt_hide")
       .eq(i - 1)
       .removeClass("view2");
+
+    $(".banners").eq(i).addClass("banner_bg");
+
+    $(".banners")
+      .eq(i - 1)
+      .removeClass("banner_bg");
   }
 
   setInterval(slide, 5000);
@@ -79,7 +85,7 @@ $(function () {
     $(this).find(".category_info").removeClass("on");
   });
 
-  //텍스트 flow 효과
+  //텍스트 flow 효과 (실패)
 
   $(window).on("load", function () {
     setFlowBanner();
@@ -112,10 +118,10 @@ $(function () {
       });
     }
   }
-  $(".button-next").click(function () {
-    $(".button-prev").removeClass("disabled");
-    if ($(".swiper-slide").hasClass("prev_one") == "true") {
-      $(".button-prev").removeClass("disabled");
-    }
-  });
+  //   $(".button-next").click(function () {
+  //     $(".button-prev").removeClass("disabled");
+  //     if ($(".swiper-slide").hasClass("prev_one") == "true") {
+  //       $(".button-prev").removeClass("disabled");
+  //     }
+  //   });
 });
