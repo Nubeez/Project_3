@@ -22,13 +22,39 @@ ol,
 li {
   list-style-type: none;
 }
-@media (min-width: 320px) and (max-width: 1191px) {
+@media (min-width: 320px) and (max-width: 767px) {
   #s_wrap {
     width: 100%;
-    height: 36vh;
+    height: 66.8vw;
     position: relative;
     overflow: hidden;
   }
+  .new_text h1 {
+    color: white;
+    font-size: 4vw;
+  }
+  #slidetr {
+    position: absolute;
+    width: 23px;
+    height: 100px;
+    color: white;
+    font-size: 1vw;
+    font-weight: 900;
+    top: 35%;
+    right: 1%;
+    z-index: 4;
+  }
+  #maincontents {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 100vw;
+    z-index: 4;
+    color: #fff;
+    transform: translate(0, -55%);
+    transition: 0.5s;
+  }
+
   .slide > li > img {
     width: 100%;
   }
@@ -88,7 +114,7 @@ li {
   }
   #slideInner2 {
     position: absolute;
-    transform: translate(0px, 2vh);
+    transform: translate(0px, 5vw);
     font-family: "GmarketSansMedium";
   }
   .momentNav {
@@ -110,11 +136,11 @@ li {
     bottom: 0%;
     left: 0%;
     transform: translate(0%, 150%);
-    width: 18vw;
+    width: 8vw;
     /* height: 6vw; */
     border: 2px solid white;
     border-radius: 30px;
-    font-size: 4vw;
+    font-size: 2vw;
     text-align: center;
     z-index: 4;
   }
@@ -149,24 +175,49 @@ li {
     border: 2px solid white;
     font-size: 2vw;
     border-radius: 20px;
-    padding: 0px 0px 8px 5px;
+    padding: 2px 0px 5px 5px;
     margin: 5px 0px;
+    text-align: center;
   }
   .footerBaneer_tx2 span {
-    width: 80px;
+    width: 16vw;
   }
 }
 
-/* @media (min-width: 768px) and (max-width: 1199px) {
-} */
-
-@media (min-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   #s_wrap {
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
   }
+  .new_text h1 {
+    color: white;
+    font-size: 1.4vw;
+  }
+  /* 슬라이드  pagination 카운트*/
+  #slidetr {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    color: white;
+    font-size: 1vw;
+    font-weight: 900;
+    top: 50%;
+    right: 1%;
+    z-index: 4;
+  }
+  #maincontents {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 100vw;
+    z-index: 4;
+    color: #fff;
+    transform: translate(0, -0%);
+    transition: 0.5s;
+  }
+
   .slide > li > img {
     width: 100%;
     height: 100%;
@@ -225,7 +276,7 @@ li {
   }
   #slideInner2 {
     position: absolute;
-    transform: translate(0px, 3vh);
+    transform: translate(0px, 2.2vw);
     font-family: "GmarketSansMedium";
   }
   .momentNav {
@@ -243,12 +294,174 @@ li {
   }
   .main_btn {
     position: absolute;
-    bottom: -30%;
+    bottom: -50%;
     left: 0%;
     width: 10vw;
     height: 3vw;
     border: 2px solid white;
     border-radius: 50px;
+    font-size: 2vw;
+    padding: 3px 1px 0px 0px;
+    text-align: center;
+    z-index: 4;
+  }
+  .main_btn a {
+    margin: 10px;
+  }
+  .swiperBg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .block_box {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+  }
+  .new_box {
+    width: 90%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  .footerBaneer_tx1 span {
+    width: 10vw;
+    height: 2vw;
+    display: block;
+    border: 2px solid white;
+    font-size: 2vw;
+    border-radius: 20px;
+    padding: 5px 0px 10px 0px;
+    text-align: center;
+  }
+  .footerBaneer_tx2 span {
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #s_wrap {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .new_text h1 {
+    color: white;
+    font-size: 1.5vw;
+    line-height: 50px;
+  }
+  /* 슬라이드  pagination 카운트*/
+  #slidetr {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    color: white;
+    font-size: 1vw;
+    font-weight: 900;
+    top: 50%;
+    right: 1%;
+    z-index: 4;
+  }
+  #maincontents {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 100vw;
+    z-index: 4;
+    color: #fff;
+    transform: translate(0, -15%);
+    transition: 0.5s;
+  }
+
+  .slide > li > img {
+    width: 100%;
+    height: 100%;
+  }
+  .All_New {
+    width: 115px;
+    height: 20px;
+    float: right;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .All_New span {
+    color: white;
+    font-size: 1.5vh;
+    line-height: 20px;
+    margin-left: 5px;
+    font-family: "YESGothic-Regular";
+  }
+  .All_New img {
+    position: absolute;
+    right: 0.7%;
+    width: 20px;
+    z-index: 3;
+  }
+  .title2 h1 {
+    font-size: 1.5vw;
+    color: white;
+  }
+  .scroll_text {
+    width: 50%;
+    height: 4vw;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    z-index: 4;
+  }
+  .scroll_text2 li {
+    font-family: "YESGothic-Regular";
+    color: white;
+    font-size: 1.8vw;
+    height: 10vw;
+  }
+  .scroll_text2 {
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(100%, -50%);
+    z-index: 4;
+  }
+  #slideInner2 {
+    position: absolute;
+    transform: translate(0px, 1.5vw);
+    font-family: "GmarketSansMedium";
+  }
+  .momentNav {
+    width: 90%;
+    display: flex;
+  }
+  .title {
+    width: 90%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .main_btn {
+    position: absolute;
+    bottom: -45%;
+    left: 0%;
+    width: 10vw;
+    height: 2.5vw;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 3px 0px 0px 0px;
     font-size: 2vw;
     text-align: center;
     z-index: 4;
@@ -285,6 +498,7 @@ li {
     font-size: 2vw;
     border-radius: 20px;
     padding: 5px 0px 10px 0px;
+    text-align: center;
   }
   .footerBaneer_tx2 span {
     width: 20vw;
@@ -376,17 +590,6 @@ li {
   width: 30px;
 }
 
-#maincontents {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  width: 100vw;
-  z-index: 4;
-  color: #fff;
-  transform: translate(0, -15%);
-  transition: 0.5s;
-}
-
 .main_btn:hover {
   background-color: white;
 }
@@ -398,7 +601,7 @@ li {
 .main_btn a {
   color: white;
   text-decoration: none;
-  line-height: 32px;
+  /* line-height: 32px; */
 }
 
 #textbox {
@@ -478,20 +681,6 @@ li {
   object-fit: cover;
 
   opacity: 0.5;
-}
-
-/* 슬라이드  pagination 카운트*/
-#slidetr {
-  position: absolute;
-  width: 50px;
-  height: 100px;
-  color: white;
-  font-size: 1vw;
-  font-weight: 900;
-  top: 50%;
-  right: 1%;
-  perspective: 1000px;
-  z-index: 4;
 }
 
 #slidetrx .view {
@@ -627,14 +816,14 @@ li {
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-100%, -150%);
+  transform: translate(-300%, -150%);
 }
 .button-prev img {
   width: 2%;
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-250%, -154%);
+  transform: translate(-450%, -154%);
 }
 .disabled {
   opacity: 0.2;
@@ -680,7 +869,7 @@ li {
 }
 
 .box_text img {
-  width: 95%;
+  width: 99%;
   border: 1px solid white;
   border-radius: 5px;
 }
@@ -714,13 +903,9 @@ li {
   justify-content: space-around;
   align-items: flex-end;
 }
-.new_text h1 {
-  color: white;
-  font-size: 16pt;
-}
 .new_text span {
   color: white;
-  font-size: 10pt;
+  font-size: 0.9vw;
 }
 .new_img img {
   width: 60%;
