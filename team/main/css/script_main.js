@@ -12,17 +12,17 @@ $(function () {
 
     $(".slide li")
       .eq(i - 1)
-      .css({ zIndex: 3 })
+      .css({zIndex: 3})
       .stop()
-      .animate({ left: w }, 700, function () {
+      .animate({left: w}, 700, function () {
         $(".slide li")
           .eq(i - 1)
-          .css({ zIndex: 1, left: 0 });
+          .css({zIndex: 1, left: 0});
       });
-    $(".slide li").eq(i).css({ zIndex: 2 });
+    $(".slide li").eq(i).css({zIndex: 2});
     $(".slide li")
       .eq(i + 1)
-      .css({ zIndex: 1 });
+      .css({zIndex: 1});
 
     // 페이지 번호
     $(".slideInner1").eq(i).addClass("view");
@@ -50,6 +50,7 @@ $(function () {
       .eq(i - 1)
       .removeClass("view2");
 
+    //   슬라이드 넘어가면서 게이지 전환
     $(".banners").eq(i).addClass("banner_bg");
 
     $(".banners")
@@ -100,7 +101,16 @@ $(function () {
     $(this).find(".category_info").removeClass("on");
   });
 
-  //텍스트 flow 효과 (실패)
+  // News 이미지 태그 글자 색추가
+  $(".new_img").mouseover(function () {
+    $(this).find(".new_text").addClass("Plus_color");
+  });
+
+  $(".new_img").mouseout(function () {
+    $(this).find(".new_text").removeClass("Plus_color");
+  });
+
+  //텍스트 flow 효과
 
   $(window).on("load", function () {
     setFlowBanner();
@@ -111,7 +121,7 @@ $(function () {
     const $list = $(".flow_wrap .flow_list");
     let wrapWidth = ""; //$wrap의 가로 크기
     let listWidth = ""; //$list의 가로 크기
-    const speed = 92; //1초에 몇픽셀 이동하는지 설정
+    const speed = 45; //1초에 몇픽셀 이동하는지 설정
 
     //리스트 복제
     let $clone = $list.clone();
@@ -119,11 +129,9 @@ $(function () {
     flowBannerAct();
 
     //반응형 :: 디바이스가 변경 될 때마다 배너 롤링 초기화
-    let oldWChk =
-      window.innerWidth > 1279 ? "pc" : window.innerWidth > 767 ? "ta" : "mo";
+    let oldWChk = window.innerWidth > 1279 ? "pc" : window.innerWidth > 767 ? "ta" : "mo";
     $(window).on("resize", function () {
-      let newWChk =
-        window.innerWidth > 1279 ? "pc" : window.innerWidth > 767 ? "ta" : "mo";
+      let newWChk = window.innerWidth > 1279 ? "pc" : window.innerWidth > 767 ? "ta" : "mo";
       if (newWChk != oldWChk) {
         oldWChk = newWChk;
         flowBannerAct();
@@ -134,7 +142,7 @@ $(function () {
     function flowBannerAct() {
       //배너 롤링 초기화
       if (wrapWidth != "") {
-        $wrap.find(".flow_list").css({ animation: "none" });
+        $wrap.find(".flow_list").css({animation: "none"});
         $wrap.find(".flow_list").slice(2).remove();
       }
       wrapWidth = $wrap.width();
@@ -153,10 +161,35 @@ $(function () {
       });
     }
   }
-  //   $(".button-next").click(function () {
-  //     $(".button-prev").removeClass("disabled");
-  //     if ($(".swiper-slide").hasClass("prev_one") == "true") {
-  //       $(".button-prev").removeClass("disabled");
+
+  $(".All_New").mouseover(function () {
+    $(".All_New img").attr("src", $(".All_New img").attr("src").replace("img/common/next.png", "img/common/change/next_coral.png"));
+  });
+  $(".All_New").mouseout(function () {
+    $(".All_New img").attr("src", $(".All_New img").attr("src").replace("img/common/change/next_coral.png", "img/common/next.png"));
+  });
+
+  //   var startHeight = $("header").height();
+  //   //시작할 Height 의 높이
+  //   $("#scrollTop").hide();
+  //   //스크롤전 scrollTop 숨기기
+
+  //   $(window).scroll(function () {
+  //     var roll = $(this).scrollTop() >= startHeight;
+  //     // 스크롤이 startHeight의 값을 넘었을 때
+  //     //scrollTop 은 윈도우에서 스크롤의 위치가 가장 상위
+  //     //스크롤의 위치가 화면 아래일수록 == scrollTop 의 값이 커짐
+
+  //     if (roll) {
+  //       //윈도우 스크롤 값이 startHeight 의 높이와 같거나 크면 보여지고
+  //       $("#scrollTop").show().css({position: "fixed"});
+  //     } else {
+  //       $("#scrollTop").hide();
   //     }
+  //     //스크롤값이 아닐 시 scrollTop 숨긴다
+  //   });
+
+  //   $("#scrollTop").click(function () {
+  //     $("html, body").animate({scrollTop: "0"}, 1500);
   //   });
 });

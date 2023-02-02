@@ -22,6 +22,10 @@ ol,
 li {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+  color: white;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   #s_wrap {
     width: 100%;
@@ -29,8 +33,7 @@ li {
     position: relative;
     overflow: hidden;
   }
-  .new_text h1 {
-    color: white;
+  .new_text h2 {
     font-size: 4vw;
   }
   #slidetr {
@@ -79,7 +82,7 @@ li {
     margin-top: 1.5px;
     z-index: 3;
   }
-  .title2 h1 {
+  .title2 h2 {
     font-size: 4vw;
     color: white;
   }
@@ -191,9 +194,8 @@ li {
     position: relative;
     overflow: hidden;
   }
-  .new_text h1 {
-    color: white;
-    font-size: 1.4vw;
+  .new_text h2 {
+    font-size: 1.5vw;
   }
   /* 슬라이드  pagination 카운트*/
   #slidetr {
@@ -242,7 +244,7 @@ li {
     width: 20px;
     z-index: 3;
   }
-  .title2 h1 {
+  .title2 h2 {
     font-size: 1.5vw;
     color: white;
   }
@@ -285,7 +287,7 @@ li {
   }
   .title {
     width: 90%;
-    height: 100px;
+    height: 150px;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -294,7 +296,7 @@ li {
   }
   .main_btn {
     position: absolute;
-    bottom: -50%;
+    bottom: -80%;
     left: 0%;
     width: 10vw;
     height: 3vw;
@@ -351,8 +353,7 @@ li {
     position: relative;
     overflow: hidden;
   }
-  .new_text h1 {
-    color: white;
+  .new_text h2 {
     font-size: 1.5vw;
     line-height: 50px;
   }
@@ -403,7 +404,7 @@ li {
     width: 20px;
     z-index: 3;
   }
-  .title2 h1 {
+  .title2 h2 {
     font-size: 1.5vw;
     color: white;
   }
@@ -503,6 +504,8 @@ li {
   .footerBaneer_tx2 span {
     width: 20vw;
   }
+
+  /* 공통부분 */
 }
 #wraper {
   width: 100%;
@@ -532,6 +535,21 @@ li {
   z-index: 1;
 }
 
+#scrollTop {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  bottom: 150px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+#scrollTop img {
+  width: 50%;
+}
 /* 슬라이드 메뉴바 폰트추가 */
 #mainbanner {
   width: 100%;
@@ -583,7 +601,7 @@ li {
     transform: scaleX(0);
   }
   100% {
-    transform: scaleX(100%);
+    transform: scaleX(1);
   }
 }
 .banner_hover > span {
@@ -638,7 +656,7 @@ li {
   justify-content: space-between;
 }
 
-.title h1 {
+.title h2 {
   font-size: 1.5vw;
   color: white;
 }
@@ -656,9 +674,11 @@ li {
   margin: 0px 10px;
 }
 .li_img img:hover {
-  scale: 1.1;
-  transition: 1s;
+  transform: scale(1.1);
   opacity: 1;
+}
+.li_img img {
+  transition: 0.5s;
 }
 .momentNav li > a {
   text-decoration: none;
@@ -724,7 +744,7 @@ li {
   height: 100%;
   z-index: 0;
   overflow: hidden;
-  margin: 0 atuo;
+  margin: 0 auto;
 }
 
 .swiper-slide {
@@ -732,17 +752,8 @@ li {
   font-size: 18px;
 
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 .swiper-slide img {
@@ -758,6 +769,11 @@ li {
   align-items: center;
   justify-items: center;
   flex-flow: column;
+  transition: 0.5s;
+}
+.category:hover {
+  transform: scale(0.98);
+  transition: 0.8s;
 }
 .category_img {
   width: 100px;
@@ -784,6 +800,8 @@ li {
   overflow: hidden;
   cursor: pointer;
 }
+/* 슬라이더 효과 추가 */
+
 .on {
   background-color: black;
   border-color: gold;
@@ -835,9 +853,9 @@ li {
 }
 
 .flow_wrap {
-  overflow: hidden;
   display: flex;
   width: 90%;
+  overflow: hidden;
   margin: 0px auto;
 }
 .flow_wrap .flow_list {
@@ -868,15 +886,19 @@ li {
   overflow: hidden;
 }
 
+.box_text {
+  position: relative;
+  transition: 0.5s;
+}
+.box_text:hover {
+  transform: scale(0.98);
+  transition: 0.7s;
+}
 .box_text img {
   width: 99%;
   border: 1px solid white;
   border-radius: 5px;
 }
-.box_text {
-  position: relative;
-}
-
 .box_text > span {
   position: absolute;
   font-size: 11pt;
@@ -889,6 +911,9 @@ li {
   width: 100%;
   margin-bottom: 10px;
 }
+.All_New:hover span {
+  color: coral;
+}
 
 .new_box {
   width: 90%;
@@ -897,12 +922,16 @@ li {
   align-items: center;
   margin: 0 auto;
 }
+.Plus_color {
+  color: coral;
+}
 .new_img {
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
+
 .new_text span {
   color: white;
   font-size: 0.9vw;
@@ -947,7 +976,7 @@ li {
   opacity: 0.7;
 }
 
-.scroll_text h1 {
+.scroll_text h2 {
   font-size: 6vw;
   color: white;
   font-family: "YESGothic-Regular";
@@ -989,7 +1018,7 @@ li {
   transform: translate(0%, -50%);
   color: white;
 }
-.footerBaneer_tx1 h1 {
+.footerBaneer_tx1 h2 {
   font-size: 3vw;
   line-height: 3vw;
 }
@@ -997,5 +1026,12 @@ li {
   font-size: 1.5vw;
   line-height: 5vw;
 }
-
+.footerBaneer_tx1 span:hover {
+  color: coral;
+  cursor: pointer;
+  transform: scale(0.95);
+}
+.footerBaneer_tx1 span {
+  transition: 0.5s;
+}
 /* } */
