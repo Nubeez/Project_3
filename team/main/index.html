@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -13,18 +14,94 @@
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="../cssfile/header_footer2.css">
+    <!-- jquery -->
     <script src="css/script_main.js"></script>
-    <script src="css/header_footer.js"></script>
+    <script src="../jsfile/header_footer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
     <title>PALAU</title>
 </head>
 
 <body>
     <div id="wraper">
-        <div id="scrollTop"><img src="img/common/diver.png" alt="">
+        <div id="scrollTop"><img src="img/common/top/diver2_2.png" alt="">
         </div>
         <!-- 헤더 들어갈부분 -->
+        <header>
+            <div class="cursor"></div>
+            <div class="container">
 
+                <div class="spMenu_btn">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <h1 class="logo_1">
+                    <a href="../main/index.html">
+                        <img src="../subimg/main_logo_white.png" alt="logoimg">
+                    </a>
+                </h1>
+
+                <nav class="nav">
+                    <div class="navL">
+                        <ul class="navL_M">
+                            <li><a href="#">experiences<i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="navL_S">
+                                    <li><a href="#">Dive</a></li>
+                                    <li><a href="#">Activities</a></li>
+                                    <li><a href="#">Culture</a></li>
+                                    <li><a href="#">Eat</a></li>
+                                    <li><a href="../sub.html">Stay</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">stay</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="navR">
+                        <ul class="navR_M">
+                            <li><a href="#">news</a></li>
+                            <li><a href="#">events</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="spbar">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+                <div class="sns_main">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                online store
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
         <!-- 헤더종료 -->
         <div id="s_wrap">
             <ul class="slide">
@@ -125,7 +202,7 @@
             <div class="grid">
                 <ul class="momentNav">
                     <li>
-                        <a href="">
+                        <a href="../palau/dive.html">
                             <p>Dive</p>
                             <div class="li_img">
                                 <img src="img/menu/palau_menu(1).jpg" alt="">
@@ -144,13 +221,13 @@
                         <a href="">
                             <p>Cultural</p>
                             <div class="li_img">
-                                <img src="img/menu/palau_menu(3).jpg" alt="">
+                                <img src="img/Building/palau_(2).jpg" alt="">
                             </div>
                         </a>
                     </li>
                     <li>
                         <a href="">
-                            <p>EAT
+                            <p>Eat
                             </p>
                             <div class="li_img">
                                 <img src="img/menu/palau_menu(4).jpg" alt="">
@@ -161,7 +238,7 @@
                         <a href="">
                             <p>Stay</p>
                             <div class="li_img">
-                                <img src="img/menu/palau_menu(5).jpg" alt="">
+                                <img src="img/Building/palau_(4).jpg" alt="">
                             </div>
                         </a>
                     </li>
@@ -186,7 +263,7 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="category">
-                                <a href="">
+                                <a href="../palau/dive.html">
                                     <img src="img/category/Palau_(1).jpg" alt="img" class="category_img">
                                     <p class="category_title">DIVE</p>
                                     <p class="category_info"><img src="img/common/next.png" alt=""></p>
@@ -328,7 +405,9 @@
                     <div class="footerBaneer_tx1">
                         <h2>Reservation</h2>
                         <h4>Go to Palau.</h4>
-                        <span>NEXT</span>
+                        <a href="../palau/consultation.html">
+                            <span>NEXT</span>
+                        </a>
                     </div>
                 </div>
                 <div class="footerBanner">
@@ -336,7 +415,9 @@
                     <div class="footerBaneer_tx1 footerBaneer_tx2">
                         <h2>SUPPORT</h2>
                         <h4>Please ask me if there is any problem..</h4>
-                        <span>SUPPORT TOP</span>
+                        <a href="../palau/consultation.html">
+                            <span>SUPPORT TOP</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -348,6 +429,45 @@
             </div>
         </section>
         <!-- 푸터 들어갈부분 -->
+        <footer>
+            <!-- <div class="topbtn">
+                <a href="#"><i class="fa-solid fa-eject"></i></a>
+            </div> -->
+            <div class="container">
+
+                <h1 class="logo_1">
+                    <a href="../Team/main/index.html">
+                        <img src="../subimg/main_logo_white.png" alt="">
+                    </a>
+                </h1>
+
+                <div class="nav_R">
+                    <div class="navL">
+                        <ul class="navL_M">
+                            <li>
+                                <a href="#">experiences<i class="fa-solid fa-angle-up"></i></a>
+                                <ul class="navL_S">
+                                    <li><a href="#">Dive</a></li>
+                                    <li><a href="#">Activities</a></li>
+                                    <li><a href="#">Culture</a></li>
+                                    <li><a href="#">Eat</a></li>
+                                    <li><a href="#">Nature</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">stay</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="navR">
+                        <ul class="navR_M">
+                            <li><a href="#">news</a></li>
+                            <li><a href="#">events</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
         <!-- 푸터 종료-->
     </div>
 </body>

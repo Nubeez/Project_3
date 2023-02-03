@@ -169,27 +169,27 @@ $(function () {
     $(".All_New img").attr("src", $(".All_New img").attr("src").replace("img/common/change/next_coral.png", "img/common/next.png"));
   });
 
-  //   var startHeight = $("header").height();
-  //   //시작할 Height 의 높이
-  //   $("#scrollTop").hide();
-  //   //스크롤전 scrollTop 숨기기
+  var startHeight = $("header").height();
+  //시작할 Height 의 높이
+  $("#scrollTop").hide();
+  //스크롤전 scrollTop 숨기기
 
-  //   $(window).scroll(function () {
-  //     var roll = $(this).scrollTop() >= startHeight;
-  //     // 스크롤이 startHeight의 값을 넘었을 때
-  //     //scrollTop 은 윈도우에서 스크롤의 위치가 가장 상위
-  //     //스크롤의 위치가 화면 아래일수록 == scrollTop 의 값이 커짐
+  $(window).scroll(function () {
+    var roll = $(this).scrollTop() >= startHeight;
+    // 스크롤이 startHeight의 값을 넘었을 때
+    //scrollTop 은 윈도우에서 스크롤의 위치가 가장 상위
+    //스크롤의 위치가 화면 아래일수록 == scrollTop 의 값이 커짐
 
-  //     if (roll) {
-  //       //윈도우 스크롤 값이 startHeight 의 높이와 같거나 크면 보여지고
-  //       $("#scrollTop").show().css({position: "fixed"});
-  //     } else {
-  //       $("#scrollTop").hide();
-  //     }
-  //     //스크롤값이 아닐 시 scrollTop 숨긴다
-  //   });
+    if (roll) {
+      //윈도우 스크롤 값이 startHeight 의 높이와 같거나 크면 보여지고
+      $("#scrollTop").show().css({position: "fixed", zIndex: "3"});
+    } else {
+      $("#scrollTop").hide();
+    }
+    //스크롤값이 아닐 시 scrollTop 숨긴다
+  });
 
-  //   $("#scrollTop").click(function () {
-  //     $("html, body").animate({scrollTop: "0"}, 1500);
-  //   });
+  $("#scrollTop").click(function () {
+    $("html, body").animate({scrollTop: "0"}, 1500);
+  });
 });
