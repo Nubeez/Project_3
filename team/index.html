@@ -1,31 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- 아이콘 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
-    <link rel="stylesheet" href="cssfile/header_footer.css">
-    <link rel="stylesheet" href="cssfile/sub.css">
-
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
-
-    <!-- 마우스 효과 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../team/main/css/style.css">
+    <link rel="stylesheet" href="../team/mian/css/font.css">
+    <link rel="stylesheet" href="../team/cssfile/header_footer2.css">
+    <!-- jquery -->
+    <script src="../team/main/css/script_main.js"></script>
+    <script src="../team/jsfile/header_footer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="jsfile/sub.js"></script>
-    <script src="jsfile/header_footer.js"></script>
 
+    <title>PALAU</title>
 </head>
 
 <body>
-    <div id="wrap">
-
+    <div id="wraper">
+        <div id="scrollTop"><img src="../team/main/img/common/top/diver2_2.png" alt="">
+        </div>
+        <!-- 헤더 들어갈부분 -->
         <header>
             <div class="cursor"></div>
-
             <div class="container">
 
                 <div class="spMenu_btn">
@@ -37,8 +41,8 @@
                 </div>
 
                 <h1 class="logo_1">
-                    <a href="../Team/main/index.html">
-                        <img src="../Team/subimg/main_logo.png" alt="logoimg">
+                    <a href="index.html">
+                        <img src="../team/subimg/main_logo_white.png" alt="logoimg">
                     </a>
                 </h1>
 
@@ -48,18 +52,18 @@
                             <li><a href="#">experiences<i class="fa-solid fa-angle-down"></i></a>
                                 <ul class="navL_S">
                                     <li><a href="../team/palau/dive.html">Dive</a></li>
-                                    <li><a href="#">Activities</a></li>
+                                    <li><a href="sub.html">Activities</a></li>
                                     <li><a href="#">Culture</a></li>
                                     <li><a href="#">Eat</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#Hotel">Stay</a></li>
+                            <li><a href="sub.html#Hotel">stay</a></li>
                         </ul>
                     </div>
 
                     <div class="navR">
                         <ul class="navR_M">
-                            <li><a href="../team/main/index.html#title2">news</a></li>
+                            <li><a href="#title2">news</a></li>
                             <li><a href="#">events</a></li>
                         </ul>
                     </div>
@@ -73,7 +77,7 @@
                     </ul>
                 </div>
 
-                <div class="sns">
+                <div class="sns_main">
                     <ul>
                         <li>
                             <a href="#">
@@ -97,7 +101,7 @@
                 </div>
             </div>
         </header>
-
+        <!-- 헤더종료 -->
         <!-- 메뉴바 -->
         <div id="side-nav">
 
@@ -105,25 +109,26 @@
                 <li class="active"><a href="#">EXPERIENCES<i class="fa-solid fa-angle-down"></i></a>
                     <ul class="navT_S">
                         <li><a href="../team/palau/dive.html">Dive</a></li>
-                        <li><a href="#Active">Activities</a></li>
+                        <li><a href="sub.html">Activities</a></li>
                         <li><a href="#">Culture</a></li>
                         <li><a href="#">Eat</a></li>
+
                     </ul>
                 </li>
-                <li><a href="#Hotel">Stay</a></li>
-                <li><a href="../team/palau/dive.html">Reservation</a></li>
+                <li><a href="../team/palau/consultation.html">Reservation</a></li>
+                <li><a href="sub.html#Hotel">Stay</a></li>
 
             </ul>
 
 
             <ul>
-                <li><a href="../team/main/index.html#title2">NEWS</a></li>
+                <li><a href="index.html#title2">NEWS</a></li>
 
                 <li><a href="#">EVENTS</a></li>
             </ul>
 
 
-            <div class="sns">
+            <div class="sns_main">
                 <ul>
                     <li>
                         <a href="#">
@@ -147,796 +152,373 @@
             </div>
 
         </div>
-
-
-        <!-- section -->
-        <section id="section">
-            <div class="container">
-                <div id="contents_M">
-                    <div class="section_L">
-
-                        <h1></h1>
-                        <div class="question">
-                            <a href="#">Welcome to Palau!</a>
+        <!-- 메뉴바 종료 -->
+        <div id="s_wrap">
+            <ul class="slide">
+                <li><img src="main/slide/Palau(1).jpg" alt="slide image"></li>
+                <li><img src="main/slide/Palau(2).jpg" alt="slide image"></li>
+                <li><img src="main/slide/Palau(3).jpg" alt="slide image"></li>
+                <li><img src="main/slide/Palau(4).jpg" alt="slide image"></li>
+            </ul>
+            <div id="mainbanner">
+                <ul class="banner_one">
+                    <li>
+                        <div class="banners banner_bg"></div>
+                        <a href="#">
+                            <div class="banner_hover">
+                                <span>01</span>
+                                <p>Palau</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="banners"></div>
+                        <a href="#">
+                            <div class="banner_hover">
+                                <span>02</span>
+                                <p>News</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="banners"></div>
+                        <a href="#">
+                            <div class="banner_hover">
+                                <span>03</span>
+                                <p>Dive</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="banners"></div>
+                        <a href="#">
+                            <div class="banner_hover">
+                                <span>04</span>
+                                <p>Culture</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 메인슬라이드 pagination -->
+            <div id="slidetr">
+                <div id="slidetrx">
+                    <span class="slideInner1 view">01</span>
+                    <span class="slideInner1">02</span>
+                    <span class="slideInner1">03</span>
+                    <span class="slideInner1">04</span>
+                    <span id="slideInner2">04</span>
+                </div>
+            </div>
+            <div id="maincontents">
+                <div id="textbox">
+                    <div class="txt_hide view2">
+                        <h2>PALAU</h2>
+                        <h6>WELCOME TO PARADISE</h6>
+                        <div class="main_btn">
+                            <a href="#">Click</a>
                         </div>
+                    </div>
+                    <div class="txt_hide ">
+                        <h2>News</h2>
+                        <h6>Check for the latest information on Palau.</h6>
+                        <div class="main_btn">
+                            <a href="#title2">Click</a>
+                        </div>
+                    </div>
+                    <div class="txt_hide">
+                        <h2>Dive</h2>
+                        <h6>Experience the amazing natural beauty of Palau.</h6>
+                        <div class="main_btn">
+                            <a href="../team/palau/dive.html">Click</a>
+                        </div>
+                    </div>
+                    <div class="txt_hide">
+                        <h2>Culture</h2>
+                        <h6>Enjoy Palau culture and gourmet food.</h6>
+                        <div class="main_btn">
+                            <a href="#">Click</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 슬라이드 끝 -->
 
-                        <div>
-                            <h4>
-                                <a href="../Team/main/index.html"><span>Pristine Paradise.<br><br>
-                                        <h3>PALAU</h3>
-                                    </span><br><span>Palau Visitors Authority</span></a>
-                            </h4>
-
-                            <p class="intro">
-                                <span>Welcome to PALAU!!</span><br><br>
-                                <span>Feel the ambience of Palau!</span>
+        <section id="section1">
+            <div class="title">
+                <h2>MOMENT</h2>
+            </div>
+            <div class="grid">
+                <ul class="momentNav">
+                    <li>
+                        <a href="../team/palau/dive.html">
+                            <p>Dive</p>
+                            <div class="li_img">
+                                <img src="main/img/menu/palau_menu(1).jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sub.html">
+                            <p>Activities</p>
+                            <div class="li_img">
+                                <img src="main/img/menu/palau_menu(2).jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Cultural</p>
+                            <div class="li_img">
+                                <img src="main/img/Building/palau_(2).jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Eat
                             </p>
+                            <div class="li_img">
+                                <img src="main/img/menu/palau_menu(4).jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sub.html#Hotel">
+                            <p>Stay</p>
+                            <div class="li_img">
+                                <img src="main/img/Building/palau_(4).jpg" alt="">
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- 모먼트 끝 -->
+            <div class="title">
+                <h2>CATEGORY</h2>
+            </div>
+            <!-- Swiper -->
+            <div class="swiperBg">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="category">
+                                <a href="sub.html">
+                                    <img src="main/img/category/Palau_(0).jpg" alt="img" class="category_img">
+                                    <p class="category_title">PALAU</p>
+                                    <p class="category_info"><img src="main/img/common/next.png" alt=""></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category">
+                                <a href="../team/palau/dive.html">
+                                    <img src="main/img/category/Palau_(1).jpg" alt="img" class="category_img">
+                                    <p class="category_title">DIVE</p>
+                                    <p class="category_info"><img src="main/img/common/next.png" alt=""></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category">
+                                <a href="">
+                                    <img src="main/img/category/palau_(2).jpg" alt="img" class="category_img">
+                                    <p class="category_title">FOOD</p>
+                                    <p class="category_info"><img src="main/img/common/next.png" alt=""></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category">
+                                <a href="">
+                                    <img src="main/img/category/palau_(4).jpg" alt="img" class="category_img">
+                                    <p class="category_title">Cruise</p>
+                                    <p class="category_info"><img src="main/img/common/next.png" alt=""></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category">
+                                <a href="">
+                                    <img src="main/img/category/palau_(5).jpg" alt="img" class="category_img">
+                                    <p class="category_title">Museum</p>
+                                    <p class="category_info"><img src="main/img/common/next.png" alt=""></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="category">
+                                <a href="">
+                                    <img src="main/img/category/palau_(6).jpg" alt="img" class="category_img">
+                                    <p class="category_title">Work of Art</p>
+                                    <p class="category_info"><img src="main/img/common/next.png" alt=""></p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <!-- <div class="swiper-button-prev"></div> -->
+                <div class="button-next">
+                    <img src="main/img/common/next.png" alt="">
+                </div>
+                <div class="button-prev disabled">
+                    <img src="main/img/common/prev.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="section2">
+            <div class="flow_wrap">
+                <ul class="flow_list">
+                    <li>PALAU</li>
+                    <li>PALAU</li>
+                </ul>
+            </div>
+            <div class="title">
+                <h2>PHOTO</h2>
+            </div>
+            <div class="block_wrap">
+                <div class="block_box">
+                    <div class="box_text">
+                        <span>2023.01.27</span>
+                        <a href="#">
+                            <img src="main/img/Thumbnail/Palau_(1).jpg" alt=""></a>
+                    </div>
+                    <div class="box_text">
+                        <span>2023.01.11</span><a href="#">
+                            <img src="main/img/Thumbnail/Palau_(2).jpg" alt=""></a>
+                    </div>
+                    <div class="box_text">
+                        <span>2022.12.30</span><a href="#">
+                            <img src="main/img/Thumbnail/Palau_(3).jpg" alt=""></a>
+                    </div>
+                    <div class="box_text">
+                        <span>2022.12.17</span><a href="#">
+                            <img src="main/img/Thumbnail/Palau_(4).jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="new_wrap">
+                <div id="title2">
+                    <h2>News</h2>
+                    <a href="#" class="All_New"><span>All NEWS</span>
+                        <img src="main/img/common/next.png" alt="">
+                    </a>
+                </div>
+                <div class="new_box">
+                    <a href="#" class="new_img">
+                        <img src="main/img/news/Palau_(1).jpg" alt="">
+                        <div class="new_text">
+                            <h2>Palau de les Arts</h2>
+                            <span>23.01.30</span>
+                        </div>
+                    </a>
+                    <a href="#" class="new_img">
+                        <img src="main/img/news/Palau_(2).jpg" alt="">
+                        <div class="new_text">
+                            <h2>Dive Event</h2>
+                            <span>23.01.30</span>
+                        </div>
+                    </a>
+                    <a href="#" class="new_img">
+                        <img src="main/img/news/palau_(3).jpg" alt="">
+                        <div class="new_text">
+                            <h2>Palau de la Musica Catalana</h2>
+                            <span>23.01.30</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="section3">
+            <div class="scroll_bg">
+                <img src="main/img/bg/Palau.jpg" alt="">
+                <div class="scroll_text">
+                    <h2>PALAU</h2>
+                </div>
+                <ul class="scroll_text2">
+                    <li>Palau, country in the western Pacific Ocean.</li>
+                    <li> It consists of some 340 coral and volcanic islands perched on the Kyushu-Palau Ridge.</li>
+                    <li>Its major populated islands are Babelthuap (Babeldaob), Koror, Malakal, Arakabesan, and Peleliu.
+                    </li>
+                    <li>The sparsely populated Kayangel Islands to the north of Babelthuap and the raised coral islands
+                        of Angaur, Sonsorol, Pulo Anna, and Tobi south of Peleliu lie outside the barrier reef system.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="section4">
+            <div class="footerBanner_wrap">
+                <div class="footerBanner">
+                    <img src="main/img/FooterBanner/city_(1).jpg" alt="" class="footerBanner_img">
+                    <div class="footerBaneer_tx1">
+                        <h2>Reservation</h2>
+                        <h4>Go to Palau.</h4>
+                        <a href="../palau/consultation.html">
+                            <span>NEXT</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footerBanner">
+                    <img src="main/img/FooterBanner/city_(1).jpg" alt="" class="footerBanner_img">
+                    <div class="footerBaneer_tx1 footerBaneer_tx2">
+                        <h2>SUPPORT</h2>
+                        <h4>Please ask me if there is any problem..</h4>
+                        <a href="../palau/consultation.html">
+                            <span>SUPPORT TOP</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flow_wrap">
+                <ul class="flow_list">
+                    <li>PALAU</li>
+                    <li>PALAU</li>
+                </ul>
+            </div>
+        </section>
+        <!-- 푸터 들어갈부분 -->
+        <footer>
+            <!-- <div class="topbtn">
+                <a href="#"><i class="fa-solid fa-eject"></i></a>
+            </div> -->
+            <div class="container">
 
-                            <div class="slide1">
-                                <ul>
-                                    <li><a href="../team/main/index.html#title2">new</a></li>
-                                    <li><a href="#">visit</a></li>
-                                    <li><a href="#">popular</a></li>
-                                    <li><a href="#">map</a></li>
-                                    <li><a href="#">overview</a></li>
-                                    <li><a href="#">request</a></li>
+                <h1 class="logo_1">
+                    <a href="../Team/main/index.html">
+                        <img src="../team/subimg/main_logo_white.png" alt="">
+                    </a>
+                </h1>
+
+                <div class="nav_R">
+                    <div class="navL">
+                        <ul class="navL_M">
+                            <li>
+                                <a href="#">experiences<i class="fa-solid fa-angle-up"></i></a>
+                                <ul class="navL_S">
+                                    <li><a href="#">Dive</a></li>
+                                    <li><a href="#">Activities</a></li>
+                                    <li><a href="#">Culture</a></li>
+                                    <li><a href="#">Eat</a></li>
+                                    <li><a href="#">Nature</a></li>
                                 </ul>
-                            </div>
-                        </div>
-
-                        <!-- <div class="request">
-                            <div class="request_1">
-                                <a href="#">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                    Scenic view request recruitment
-                                </a>
-                            </div>
-
-                            <div class="request_2">
-                                <a href="#">
-                                    <i class="fa-solid fa-angle-right"></i>
-                                    Request for aerial photography
-                                </a>
-                            </div>
-
-                        </div> -->
-
+                            </li>
+                            <li><a href="#">stay</a></li>
+                        </ul>
                     </div>
 
-                    <div class="section_R">
-
-                        <div id="slidewrap">
-
-                            <ul class="slide">
-
-                                <li><img src="../team/subimg/palau1.jpg" alt="slide image"></li>
-                                <li><img src="../team/subimg/palau3.jpg" alt="slide image"></li>
-                                <li><img src="../team/subimg/palau4.jpg" alt="slide image"></li>
-                                <li><img src="../team/subimg/palau5.jpg" alt="slide image"></li>
-                                <li><img src="../team/subimg/palau6.jpg" alt="slide image"></li>
-                                <li><img src="../team/subimg/palau7.jpg" alt="slide image"></li>
-                                <li><img src="../team/subimg/palau8.jpg" alt="slide image"></li>
-
-                            </ul>
-
-                            <a href="#">
-                                <p>360 View</p>
-                            </a>
-
-                            <span class="prev">&lt;</span>
-
-                            <span class="next">&gt;</span>
-                        </div>
-
-
-                        <!-- active 부분 -->
-                        <div id="Active">
-                            <div class="active">
-                                <h1>active</h1>
-
-                                <div class="image">
-
-                                    <div class="img1">
-                                        <h3>Camping</h3>
-                                        <a href="#Camping" class="move">View More</a>
-                                    </div>
-
-                                    <div class="img2">
-                                        <h3>Bird watching</h3>
-                                        <a href="#Bird" class="move">View More</a>
-                                    </div>
-
-                                    <div class="img3">
-                                        <h3>Waterfall</h3>
-                                        <a href="#Waterfall" class="move">View More</a>
-                                    </div>
-
-                                    <div class="img4">
-                                        <h3>Nature Trail</h3>
-                                        <a href="#Nature" class="move">View More</a>
-                                    </div>
-
-                                    <div class="img5">
-                                        <h3>Kayaking</h3>
-                                        <a href="#Kayaking" class="move">View More</a>
-                                    </div>
-
-                                    <div class="img6">
-                                        <h3>Traditional Sailing</h3>
-                                        <a href="#Sailing" class="move">View More</a>
-                                    </div>
-
-                                    <div class="img7">
-                                        <h3>Aerial Tour</h3>
-                                        <a href="#Aerial" class="move">View More</a>
-                                    </div>
-
-                                    <div class="img8">
-                                        <h3>Art Gallery</h3>
-                                        <a href="#Gallery" class="move">View More</a>
-                                    </div>
-
-                                </div>
-
-                                <div id="Camping">
-
-                                    <div class="camping">
-
-                                        <div class="campingimg">
-                                            <img src="../team/subimg/camping1.jpg" alt="Camping">
-                                        </div>
-
-                                        <div class="campingintro">
-                                            <h2>Camping</h2><br>
-                                            <p>If you are into camping and have a penchant for the ocean OR want to try
-                                                something new, a camping expedition may be what you are looking for. By
-                                                the end of your trip, you'll have explored and learned much more as to
-                                                why Palau's Rock Island Southern Lagoon is revered to as the most
-                                                diverse, complex, and breathtakingly beautiful places on earth!</p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div id="Bird">
-
-                                    <div class="bird">
-
-                                        <div class="birdintro">
-                                            <h2>Ngermeskang Bird Sanctuary</h2><br>
-                                            <p>The Ngermeskang Bird Sanctuary is a public bird sanctuary treasured by
-                                                visitors as place of beauty and quiet in rural environment, supporting a
-                                                diversity of resident and migrating birds in a natural and undeveloped
-                                                setting while providing environmental education opportunities to abroad
-                                                audiences.</p><br>
-                                            <a href="#">Download Brochure</a>
-                                        </div>
-
-                                        <div class="birdimg">
-                                            <img src="../team/subimg/bird.jpg" alt="Bird">
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-
-                                <div id="Waterfall">
-
-                                    <div class="waterfall">
-
-                                        <div class="waterfallimg">
-                                            <img src="../team/subimg/waterfall1.jpg" alt="Waterfall">
-                                        </div>
-
-                                        <div class="waterfallintro">
-                                            <h2>Waterfall</h2><br>
-                                            <p>Hop in a car and head over to the Ngardmau Waterfall. It is considered to
-                                                be the tallest waterfall that can be found on the main island of
-                                                Babeldaob. The trail to the waterfall may take 20-30min to get to. At
-                                                the base of the falls, take a dip in its natural swimming pools.</p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div id="Nature">
-
-                                    <div class="nature">
-
-                                        <div class="natureintro">
-                                            <h2>Ngardok Nature Reserve</h2><br>
-                                            <p>Endemic birds are something to be on the lookout for at the Reserve such
-                                                as the endemic Palau Flycatcher (Charmelachull, Myiagra erythops) and
-                                                the Palau Fruit Dove (Biib, Ptilinopus pelewensis).</p><br>
-                                            <p>The Reserve is known as a hotspot for plan endemism and is a site for
-                                                rare species, such as the rare endemic Tilol (Garcinia rumiyo). Many
-                                                types of small native and endemic orchids can be found along the trail.
-                                            </p>
-                                        </div>
-
-                                        <div class="natureimg">
-                                            <img src="../team/subimg/IMG_1536.jpeg" alt="Nature">
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div id="Kayaking">
-
-                                    <div class="kayaking">
-
-                                        <div class="kayakingimg">
-                                            <img src="../team/subimg/Kayak1.jpg" alt="kayaking">
-                                        </div>
-
-                                        <div class="kayakingintro">
-                                            <h2>Kayaking</h2><br>
-                                            <p>Palau was made for kayaking, where paddlers can make their way into any
-                                                one of hundreds of deserted bays and lagoons with perfectly unspoiled
-                                                scenery, impeccable preserved reefs and coves, and only the swirling
-                                                sound of the paddles breaking through the turquoise surface. Palau is
-                                                probably the best place in the world for nature-loving kayakers to take
-                                                day trips or excursions of several days.</p><br>
-                                            <p>We recommend having a local guide with you to show you the best sites and
-                                                offer some historical, cultural and scientific insights as you paddle.
-                                            </p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div id="Sailing">
-
-                                    <div class="sailing">
-
-                                        <div class="sailingintro">
-                                            <h2>Traditional Sailing</h2><br>
-                                            <p>Set sail on a traditional canoe! "Sailing on a traditional canoe in this
-                                                modern day sometimes feels like a full on time machine bringing us back
-                                                to the days when our ancestors traversed the wild oceans", says local
-                                                guide, Mac Sasao.</p>
-                                        </div>
-
-                                        <div class="sailingimg">
-                                            <img src="../team/subimg/Palau_19_canoe_1.jpg" alt="sailing">
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div id="Aerial">
-
-                                    <div class="aerial">
-
-                                        <div class="aerialimg">
-                                            <img src="../team/subimg/aerial.jpg" alt="Aerial">
-                                        </div>
-
-                                        <div class="aerialintro">
-                                            <h2>Aerial Tour</h2><br>
-                                            <p>Experience breathtaking views of Pristine Paradise Palau from above!
-                                                Ascend into the skies to see the renowned Seventy Islands, a UNESCO
-                                                World Heritage Site, the beauty of the Rock Islands, and famous dive
-                                                sites. One of the best ways to see the island!</p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                                <div id="Gallery">
-
-                                    <div class="gallery">
-
-                                        <div class="galleryintro">
-                                            <h2>Eco-Glass Art Gallery</h2><br>
-                                            <p>Located at Koror State Solid Waste Management building, you can find the
-                                                Belau Eco-Glass Center and Art Gallery where ornaments and glassware are
-                                                created out of recycled glass found in Palau. Meet the local creatives
-                                                who design these pieces and find a unique gift at their art gallery! The
-                                                center also offers glass blowing classes from Monday-Friday. Please call
-                                                Koror State Solid Waste Management Office at 488-8076/8077.</p>
-                                        </div>
-
-                                        <div class="galleryimg">
-                                            <img src="../team/subimg/Photo-29-05-2017-1-05-42-AM.jpg" alt="Gallery">
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </div>
-
-
-                        <!-- 호텔... -->
-                        <div id="Hotel">
-                            <div class="hotel">
-                                <h1>Hotel</h1>
-
-                                <div class="hotel_1">
-
-                                    <!-- 호텔 1 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../Team/subimg/hotel1.jpg" alt="hotel1">
-                                        </div>
-
-                                        <h5>Airai Water paradise Hotel & Spa</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Situated among a mangrove reserve, the European mansion style Airai..</p>
-                                        </div>
-
-                                    </div>
-
-                                    <!-- 호텔 2 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel2.jpg" alt="hotel2">
-                                        </div>
-
-                                        <h5>Bayside Bed Breakfas</h5><br>
-                                        <div class="hotelintro">
-                                            <p>A private, secluded and exclusive Bed & Breakfast on Nikko..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 3 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel3.jpg" alt="hotel3">
-                                        </div>
-
-                                        <h5>Beluu Sea View Resort</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Beluu Sea View Resort features 16 beautiful rooms. Set high..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 4 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel4.jpg" alt="hotel4">
-                                        </div>
-
-                                        <h5>Palau sunny garden Hotel & Apartment</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Finding an ideal family-friendly inn in Koror does not have..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 5 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel5.webp" alt="hotel5">
-                                        </div>
-
-                                        <h5>Blue ocean View Hotel/MK Hotel</h5><br>
-                                        <div class="hotelintro">
-                                            <p>It is the ideal hotel to feel the quiet atmosphere..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 6 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel6.jpg" alt="hotel6">
-                                        </div>
-
-                                        <h5>Carolines Resort</h5><br>
-                                        <div class="hotelintro">
-                                            <p>The Palau Carolines Resort is one of the greatest treasures..</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="hotel_2">
-
-                                    <!-- 호텔 7 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel7.jpeg" alt="hotel1">
-                                        </div>
-
-                                        <h5>Carp Island Resort</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Carp Island Resort is a locally owned dive resort situated</p>
-                                        </div>
-
-                                    </div>
-
-                                    <!-- 호텔 8 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel8.jpg" alt="hotel2">
-                                        </div>
-
-                                        <h5>D.W.Motel</h5><br>
-                                        <div class="hotelintro">
-                                            <p>DW Motel is a budget accommodation of 20 rooms located..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 9 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel9.jpg" alt="hotel3">
-                                        </div>
-
-                                        <h5>Dichem Eco Beach Resort</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Nestled in the pristine waters of Ngaraard, Babeldaob is Dichem's..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 10 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel10.jpeg" alt="hotel4">
-                                        </div>
-
-                                        <h5>Dolphin Bay Resort</h5><br>
-                                        <div class="hotelintro">
-                                            <p>We invite you to the tropical island of Peleliu, at..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 11 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel11.jpg" alt="hotel5">
-                                        </div>
-
-                                        <h5>EmeraIDreams</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Central, Furnished, and Affordable Accommodations located in Koror,
-                                                Palau..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 12 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel12.jpg" alt="hotel6">
-                                        </div>
-
-                                        <h5>Garden Palace Downtown</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Superb location for shopping and dining in Palau. Have fun..</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="hotel_3">
-
-                                    <!-- 호텔 13 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel13.jpg" alt="hotel1">
-                                        </div>
-
-                                        <h5>HI Resort / Boutique 7</h5><br>
-                                        <div class="hotelintro">
-                                            <p>A Private boutique resort/hotel located by the forest in Palau.</p>
-                                        </div>
-
-                                    </div>
-
-                                    <!-- 호텔 14 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel14.jpg" alt="hotel2">
-                                        </div>
-
-                                        <h5>Jing Pin Century Hotel Jing Pin Shi Ji Jiu Dian</h5><br>
-                                        <div class="hotelintro">
-                                            <p>See why so many travelers make Jing Pin Century Hotel..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 15 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel15.jpg" alt="hotel3">
-                                        </div>
-
-                                        <h5>Landmark Marina Hotel</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Landmark Marina, located in a beautiful Lagoon at the southwest..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 16 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel16.jpg" alt="hotel4">
-                                        </div>
-
-                                        <h5>Lazarus Beachfront Home</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Lazarus Beachfront Home is located on the beautiful atoll of..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 17 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel17.jpg" alt="hotel5">
-                                        </div>
-
-                                        <h5>LEHNS Hotel &amp; Apartments</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Reputed to be one of the best hotel/apartment type in..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 18 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel18.jpg" alt="hotel6">
-                                        </div>
-
-                                        <h5>M&A Eco Beach Bungalows</h5><br>
-                                        <div class="hotelintro">
-                                            <p>We welcome you to paradise! If you are visiting Palau..</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="hotel_4">
-
-                                    <!-- 호텔 19 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel19.jpg" alt="hotel1">
-                                        </div>
-
-                                        <h5><span id="span-1216-7527" class="ct-span">MCS Hotel &amp; Apartments</span>
-                                        </h5><br>
-                                        <div class="hotelintro">
-                                            <p>MCS Hotel and Apartments located in the Heart of Malakal..</p>
-                                        </div>
-
-                                    </div>
-
-                                    <!-- 호텔 20 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel20.jpg" alt="hotel2">
-                                        </div>
-
-                                        <h5>Palasia Hotel Palau</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Palasia Hotel, Palau provides a preferred location in the heart of..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 21 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel21.png" alt="hotel3">
-                                        </div>
-
-                                        <h5>Palau Beach Bungalows</h5><br>
-                                        <div class="hotelintro">
-                                            <p>The Palau Beach Bungalows is a small, family-run resort of..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 22 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel22.jpeg" alt="hotel4">
-                                        </div>
-
-                                        <h5>>Palau Central Hotel</h5><br>
-                                        <div class="hotelintro">
-                                            <p>As a landmark property, the original hotel opened in the..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 23 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel23.png" alt="hotel5">
-                                        </div>
-
-                                        <h5>Palau Central Hotel</h5><br>
-                                        <div class="hotelintro">
-                                            <p>As a landmark property, the original hotel opened in the..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 24 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel24.jpg" alt="hotel6">
-                                        </div>
-
-                                        <h5>Palau Hotel</h5><br>
-                                        <div class="hotelintro">
-                                            <p>THE PALAU HOTEL proudly boosts its best location and hospitality..</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class="hotel_5">
-
-                                    <!-- 호텔 25 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel25.jpg" alt="hotel1">
-                                        </div>
-
-                                        <h5>Palau Pacific Resort Water Bungalow</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Located directly over the water, our private Water Bungalows offer..</p>
-                                        </div>
-
-                                    </div>
-
-                                    <!-- 호텔 26 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel26.jpg" alt="hotel2">
-                                        </div>
-
-                                        <h5>Palau Plantation Resort</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Palau Plantation Resort is a South Pacific hideaway offering travelers..
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 27 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel27.jpg" alt="hotel3">
-                                        </div>
-
-                                        <h5>Palau Royal Resort</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Stay in the luxurious Palau Royal Resort! Take your life..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 28 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel28.jpg" alt="hotel4">
-                                        </div>
-
-                                        <h5>Palau Sea Passion Hotel</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Offering a private beach, an outdoor pool and a restaurant,..
-                                        </div>
-                                        </p>
-                                    </div>
-
-                                    <!-- 호텔 29 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel29.jpg" alt="hotel5">
-                                        </div>
-
-                                        <h5>The Cove Resort Palau</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Situated on the island of Malakal in the Republic of..</p>
-                                        </div>
-                                    </div>
-
-                                    <!-- 호텔 30 -->
-                                    <div class="hotelimg">
-
-                                        <div class="hotelimg_1">
-                                            <img src="../team/subimg/hotel30.jpg" alt="hotel6">
-                                        </div>
-
-                                        <h5>West Plaza By the Sea Hotel</h5><br>
-                                        <div class="hotelintro">
-                                            <p>Our Palau hotel features 36 rooms overlooking the ocean and nearby
-                                                islands..
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
+                    <div class="navR">
+                        <ul class="navR_M">
+                            <li><a href="#title2">news</a></li>
+                            <li><a href="#">events</a></li>
+                        </ul>
                     </div>
-
                 </div>
 
             </div>
-    </div>
-    </section>
-
-
-    <!-- 풋터 부분 -->
-    <footer>
-
-        <div class="topbtn">
-            <a href="#"><i class="fa-solid fa-eject"></i></a>
-        </div>
-
-        <div class="container">
-
-            <h1 class="logo_1">
-                <a href="../Team/main/index.html">
-                    PALAU
-                </a>
-            </h1>
-
-            <div class="nav_R">
-                <div class="navL">
-                    <ul class="navL_M">
-                        <li>
-                            <a href="#">experiences<i class="fa-solid fa-angle-up"></i></a>
-                            <ul class="navL_S">
-                                <li><a href="../team/palau/dive.html">Dive</a></li>
-                                <li><a href="#Active">Activities</a></li>
-                                <li><a href="#">Culture</a></li>
-                                <li><a href="#">Eat</a></li>
-                                <li><a href="#Hotel">Stay</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">stay</a></li>
-                    </ul>
-                </div>
-
-                <div class="navR">
-                    <ul class="navR_M">
-                        <li><a href="#">news</a></li>
-                        <li><a href="#">events</a></li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </footer>
+        </footer>
+        <!-- 푸터 종료-->
     </div>
 </body>
 
