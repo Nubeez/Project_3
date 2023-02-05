@@ -82,7 +82,7 @@ a {
     margin-top: 1.5px;
     z-index: 3;
   }
-  .title2 h2 {
+  #title2 h2 {
     font-size: 4vw;
     color: white;
   }
@@ -244,7 +244,7 @@ a {
     width: 20px;
     z-index: 3;
   }
-  .title2 h2 {
+  #title2 h2 {
     font-size: 1.5vw;
     color: white;
   }
@@ -404,7 +404,7 @@ a {
     width: 20px;
     z-index: 3;
   }
-  .title2 h2 {
+  #title2 h2 {
     font-size: 1.5vw;
     color: white;
   }
@@ -647,7 +647,7 @@ a {
   margin: 0 auto;
 }
 
-.title2 {
+#title2 {
   width: 90%;
   height: 100px;
   position: relative;
