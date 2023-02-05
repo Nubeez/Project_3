@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+@media(max-width:767px){
+    *{margin: 0 ; padding: 0; font-size: 8px; font-family: 'locus_sangsang';}
+    ul,li,ol{list-style: none;}
+    a{text-decoration: none;}
+
+    #wrap {width: 100%;margin: 0 auto;}
+    section {width: 90%; height: auto; margin: 120px auto; display: flex; flex-direction: row; justify-content: space-between }
+   
+    /*오른쪽 섹션*/
+    #right {width: 75%; height: auto; }
+        #right .sld_1 {background-image:url(../img/blueconer_02.png); position: relative; width: 100%;height: 400px; background-size:cover; 
+            background-repeat: no-repeat; background-position: center; }
+        #right .sld_1 {transform: translateY(-100px); transition: all 3s; opacity: 0;}
+        #right > .sld_1 > .text_1 {position:absolute; top: 40%; left: 6%; text-align: center;}
+        #right > .sld_1 > .text_1 > h1 {font-size: 3rem; line-height: 3rem; color: white; margin-bottom: 1rem;text-shadow: 4px 4px 5px rgb(44, 54, 110)}
+        #right > .sld_1 > .text_1 > p {font-size: 1.5rem; line-height: 2rem; color: white; text-shadow: 4px 4px 5px rgb(44, 54, 110)}
+            
+        
+        #right .sld_2{background-image:url(../img/blueconer_03.png); position: relative; width: 100%;height: 400px; background-size:cover; 
+            background-repeat: no-repeat; background-position: center;}
+            #right .sld_2{transform: translateY(100px); transition: all 2s; opacity: 0;}
+            #right > .sld_2 > .text_2 {position:absolute; top: 10%; left: 1%;text-align: left; padding: 0 2rem;}
+            #right > .sld_2 > .text_2 > p {font-size: 1.2rem; line-height: 2rem; color: white; text-shadow: 4px 4px 5px rgb(44, 54, 110)}
+
+        #right .sld_3{width: 100%;height: 600px; display: flex; flex-direction: column; margin-bottom: 4rem; align-content: center;}
+            #right > .sld_3 > .photo_1 {width: 100%;height: 50%; background-image: url(../img/bluecorner_2.jpg);background-size: cover;background-position: center;}
+            #right > .sld_3 > .photo_1 {transform: translateY(-100px); transition: all 2s; opacity: 0;}
+            #right > .sld_3 > .text_3 {width: 100%;height: 50%; position: relative;background-color: #ddd;} 
+            #right > .sld_3 > .text_3 > .text_3_1 {width: 80%; position: absolute; top: 30%; left: 12%;} 
+            #right > .sld_3 > .text_3 > .text_3_1 >h2 {font-size: 2rem; line-height: 2rem; color: coral; margin-bottom: 2rem; text-shadow: 4px 4px 5px #ddd; }
+            #right > .sld_3 > .text_3 > .text_3_1 >h3 {font-size: 1.2rem; line-height: 2rem; color: gray;}
+            
+        #right .sld_4{width: 100%;height: 600px; display: flex; flex-direction: column; margin-bottom: 4rem; align-content: center;}
+            #right > .sld_4 > .photo_2 {width: 100%;height: 50%; background-image: url(../img/blueconer_04.png); background-size: cover;background-position: center;}
+            #right > .sld_4 > .photo_2 {transform: translateY(100px); transition: all 2s; opacity: 0;}
+            #right > .sld_4 > .text_4 {width: 100%;height: 50%; position: relative;background-color: #ddd;} 
+            #right > .sld_4 > .text_4 > .text_4_1 {width: 80%; position: absolute; top: 30%; left: 10%;} 
+            #right > .sld_4 > .text_4 > .text_4_1 >p {font-size: 1.2rem; line-height: 2rem; color: gray;}
+
+        #right .sld_5{width: 100%;height: 600px; display: flex; flex-direction: column; margin-bottom: 4rem; align-content: center;}
+            #right > .sld_5 > .photo_3 {width: 100%;height: 50%; background-image: url(../img/blueconer_03.png); background-size: cover; background-position: center;
+                transform: translateX(-100px); transition: all 2s; opacity: 0;}
+            #right > .sld_5 > .text_5 {width: 100%;height: 50%; position: relative;background-color: #ddd;} 
+            #right > .sld_5 > .text_5 > .text_5_1 {width: 80%; position: absolute; top: 40%; left: 12%;} 
+            #right > .sld_5 > .text_5 > .text_5_1 > p {font-size: 1.2rem; line-height: 2rem; color: gray;}
+            
+        #right .sld_6{width: 100%;height: 600px; display: flex; flex-direction: column; margin-bottom: 4rem; align-content: center;}
+            #right > .sld_6 > .photo_4 {width: 100%;height: 50%; background-image: url(../img/blueconer_06.png); background-size: cover; background-position: center;
+                transform: translateY(100px); transition: all 2s; opacity: 0;}
+            #right > .sld_6 > .text_6 {width: 100%;height: 50%; position: relative;background-color: #ddd;} 
+            #right > .sld_6 > .text_6 > .text_6_1 {width: 80%; position: absolute; top: 24%; left: 10%;} 
+            #right > .sld_6 > .text_6 > .text_6_1 >h2 {font-size: 2rem; line-height: 2rem; color: coral; margin-bottom: 2rem; text-shadow: 4px 4px 5px #ddd;}
+            #right > .sld_6 > .text_6 > .text_6_1 >p {font-size: 1.2rem; line-height: 2rem; color: gray; text-shadow: 4px 4px 5px #ddd;}
+
+        #right .touch_btn {height: 100px; background-image: url(../img/blueconer_03.png);background-position: center;background-size: cover; text-align: left; 
+                padding: 0.5rem 1rem; border-radius: 5px; box-shadow: 5px 5px 20px rgba(92, 86, 85, 0.2);
+                margin: 3rem 0;}
+            #right a {font-size: 1rem; line-height:1.5rem ; color: white;}
+            #right .touch_btn:hover {background-size:110%; color: coral;}
+
+        .block {position: relative; width: 100%; height: auto; margin-bottom: 2rem; padding: 0 0 8px 0;}
+            .block > h1 {text-shadow: 4px 4px 5px #ddd; margin-bottom: 3rem; font-size: 2rem; text-align: center; color: coral;}
+            .block > h1 {transform: translateY(-50px); transition: all 2s; opacity: 0;}
+            .block > p {text-shadow: 4px 4px 5px #ddd; margin-bottom: 3rem; font-size: 1.5rem; line-height: 2rem; text-align: center; color: darkgray;}
+            .block > p > span {font-size: 1.5rem; font-style: italic; color:coral; text-shadow: 4px 4px 5px #ddd;}
+        
+            .block > .layout_box1 {margin: 0 0 20px 0; display: flex; flex-direction: column; align-items: center;
+            justify-content: space-between;}
+            .block > .layout_box1 > article {display: flex;flex-direction: column;justify-content: center; width:90%;height: auto; margin:1.6rem 0 ; padding: 1.6% 1.6%; 
+                background-color: white; position: relative; box-shadow: 5px 5px 20px rgba(92, 86, 85, 0.2) }
+            .block > .layout_box1 article .rei > img {width: 15%; position: absolute; top: -22px; right: 5%; z-index: 100;
+                    box-shadow: 5px 5px #ddd; }
+            .block > .layout_box1 article a {height: auto; text-decoration: none; color: white;}
+            .block > .layout_box1 article a > h3:hover {color: coral;}
+            .block > .layout_box1 article a > .umi {width:100%; height:auto; overflow: hidden; font-weight: normal; }
+            .block > .layout_box1 article a > h3 {color:darkgray; overflow: hidden; width: 100%;  text-align: left; line-height: 2rem; margin: 1rem 0 4rem 0;}
+            .block > .layout_box1 article a > .umi > img {width: 100%;height: 100%; transition: all 0.2s linear;}
+            .block > .layout_box1 article a > .umi > img:hover {transform: scale(1.4);}
+            .block > .layout_box1 article > button{width: 90%; height: 3rem; line-height: 3rem; text-align: center; background-color: coral; 
+                border-radius: 5px; border: none; text-decoration: none; position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%);
+                box-shadow: 5px 5px 20px rgba(92, 86, 85, 0.2); color:white;}
+            .block > .layout_box1 article > button:hover{background-color: #434343;}
+             
+    }
+
+ @media(min-width:768px){
+    *{margin: 0 ; padding: 0; font-size: 12px; font-family: 'locus_sangsang';}
+    ul,li,ol{list-style: none;}
+    a{text-decoration: none;}
+
+    #wrap {width: 100%;margin: 0 auto;}
+    section {width: 90%; height: auto; margin: 120px auto; display: flex; flex-direction: row; justify-content: center }
+   
+            /*오른쪽 섹션*/
+    #right {width: 75%; height: auto; }
+        #right .sld_1 {background-image:url(../img/blueconer_02.png); position: relative; width: 100%;height: 500px; background-size:cover; 
+            background-repeat: no-repeat; background-position: center; }
+            #right .sld_1 {transform: translateY(-100px); transition: all 3s; opacity: 0;}
+            #right > .sld_1 > .text_1 {position:absolute; top: 45%; left:20%;text-align: center;}
+            #right > .sld_1 > .text_1 > h1 {font-size: 3rem; line-height: 3rem; color: white; margin-bottom: 1rem;text-shadow: 4px 4px 5px rgb(44, 54, 110)}
+            #right > .sld_1 > .text_1 > p {font-size: 1.5rem; line-height: 2rem; color: white; text-shadow: 4px 4px 5px rgb(44, 54, 110)}
+    
+        #right .sld_2{background-image:url(../img/blueconer_03.png); position: relative; width: 100%;height: 500px; background-size:cover; 
+            background-repeat: no-repeat; background-position: center;}
+            #right .sld_2{transform: translateY(100px); transition: all 2s; opacity: 0;}
+            #right > .sld_2 > .text_2 {position:absolute; top: 28%; left: 1%;text-align: left;padding: 0 2rem;}
+            #right > .sld_2 > .text_2 > p {font-size: 1.2rem; line-height: 2rem; color: white; text-shadow: 4px 4px 5px rgb(44, 54, 110)}
+
+        #right .sld_3{width: 100%;height: 500px; display: flex; flex-direction: row;}
+            #right > .sld_3 > .photo_1 {width: 50%; background-image: url(../img/bluecorner_2.jpg); background-position: center;}
+            #right > .sld_3 > .photo_1 {transform: translateY(-100px); transition: all 2s; opacity: 0;}
+            #right > .sld_3 > .text_3 {width: 50%; position: relative;} 
+            #right > .sld_3 > .text_3 > .text_3_1 {width: 80%; position: absolute; top: 30%; left: 12%;} 
+            #right > .sld_3 > .text_3 > .text_3_1 >h2 {font-size: 2rem; line-height: 2rem; color: coral; margin-bottom: 2rem; text-shadow: 4px 4px 5px #ddd; }
+            #right > .sld_3 > .text_3 > .text_3_1 >h3 {font-size: 1.2rem; line-height: 2rem; color: gray;}
+            
+        #right .sld_4{width: 100%;height: 500px; display: flex; flex-direction: row;}
+            #right > .sld_4 > .photo_2 {width: 50%; background-image: url(../img/blueconer_04.png); background-size: cover; background-position: center;}
+            #right > .sld_4 > .photo_2 {transform: translateY(100px); transition: all 2s; opacity: 0;}
+            #right > .sld_4 > .text_4 {width: 50%; position: relative;} 
+            #right > .sld_4 > .text_4 > .text_4_1 {width: 80%; position: absolute; top: 30%; left: 10%;} 
+            #right > .sld_4 > .text_4 > .text_4_1 >p {font-size: 1.2rem; line-height: 2rem; color: gray; text-shadow: 4px 4px 5px #ddd;}
+
+        #right .sld_5{width: 100%;height: 500px; display: flex; flex-direction: row;}
+            #right > .sld_5 > .photo_3 {width: 50%; background-image: url(../img/blueconer_03.png); background-size: cover; background-position: center;
+                transform: translateY(-100px); transition: all 2s; opacity: 0;}
+            #right > .sld_5 > .text_5 {width: 50%; position: relative;} 
+            #right > .sld_5 > .text_5 > .text_5_1 {width: 80%; position: absolute; top: 40%; left: 12%;} 
+            #right > .sld_5 > .text_5 > .text_5_1 >p {font-size: 1.2rem; line-height: 2rem; color: gray; text-shadow: 4px 4px 5px #ddd;}
+        
+        #right .sld_6{width: 100%;height: 500px; display: flex; flex-direction: row; margin-bottom: 4rem;}
+            #right > .sld_6 > .photo_4 {width: 50%; background-image: url(../img/blueconer_06.png); background-size: cover;background-position: center;
+                transform: translateY(100px); transition: all 2s; opacity: 0;}
+            #right > .sld_6 > .text_6 {width: 50%; position: relative;} 
+            #right > .sld_6 > .text_6 > .text_6_1 {width: 80%; position: absolute; top: 24%; left: 10%;} 
+            #right > .sld_6 > .text_6 > .text_6_1 >h2 {font-size: 2rem; line-height: 2rem; color: coral; margin-bottom: 2rem; text-shadow: 4px 4px 5px #ddd;}
+            #right > .sld_6 > .text_6 > .text_6_1 >p {font-size: 1.2rem; line-height: 2rem; color: gray; text-shadow: 4px 4px 5px #ddd;}
+
+        #right .touch_btn {height: 100px; background-image: url(../img/blueconer_03.png);background-position: center;background-size: cover; text-align: left; 
+                padding: 0.5rem 1rem; border-radius: 5px; box-shadow: 5px 5px 20px rgba(92, 86, 85, 0.2);
+                background-color: #ddd; margin: 3rem 0; }
+            #right a {font-size: 1rem; line-height:1.5rem ; color: white;}
+            #right .touch_btn:hover {background-size:110%; color: coral;}
+
+        .block {position: relative; width: 100%; height: auto; margin-bottom: 2rem; padding: 0 0 8px 0;}
+            .block > h1 {text-shadow: 4px 4px 5px #ddd; margin-bottom: 3rem; font-size: 2rem; text-align: center; color: coral;}
+            .block > h1 {transform: translateY(-50px); transition: all 2s; opacity: 0;}
+            .block > p {text-shadow: 4px 4px 5px #ddd; margin-bottom: 3rem; font-size: 1.5rem; line-height: 2rem; text-align: center; color: darkgray;}
+            .block > p > a > span {font-size: 1.5rem; font-style: italic; color:coral; text-shadow: 4px 4px 5px #ddd;}
+            
+            .block > .layout_box1 {margin: 0 0 20px 0; display: flex; flex-direction: row;
+                justify-content: space-between;}
+            .block > .layout_box1 > article {display: flex;flex-direction: column; width: 28.8%; height:auto; margin:0 ; padding: 1.6% 1.6%; 
+                    background-color: white; position: relative; box-shadow: 5px 5px 20px rgba(92, 86, 85, 0.2) }
+            .block > .layout_box1 article .rei > img {position: absolute; top: -22px; right: 5%; z-index: 100;
+                    box-shadow: 5px 5px #ddd; }
+            .block > .layout_box1 article > a {height: auto; text-decoration: none; color: white;}
+            .block > .layout_box1 article a > h3:hover {color: coral;}
+            .block > .layout_box1 article a > .umi {width:100%; overflow: hidden; font-weight: normal; }
+            .block > .layout_box1 article a > h3 {color:darkgray; overflow: hidden; width: 100%;  text-align: left; 
+                    line-height: 1.2rem; margin: 1rem 0 4rem 0;}
+            .block > .layout_box1 article a > .umi > img {width: 100%;height: auto; transition: all 0.2s linear;}
+            .block > .layout_box1 article a > .umi > img:hover {transform: scale(1.4);}
+            .block > .layout_box1 article > button{width: 90%; height: 3rem; line-height: 2rem; text-align: center; background-color: coral; 
+                    border-radius: 5px; border: none; text-decoration: none; position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%);
+                    box-shadow: 5px 5px 20px rgba(92, 86, 85, 0.2); color:white;}
+            .block > .layout_box1 article > button:hover{background-color: #434343;cursor: pointer;}
+            
+ }
+
+@media(min-width:1200px){       
+    *{margin: 0 ; padding: 0; font-size: 16px; font-family: 'locus_sangsang';}
+    ul,li,ol{list-style: none;}
+    a{text-decoration: none;}
+
+    #wrap {width: 100%;margin: 0 auto;}
+    section {width: 90%; height: auto; margin: 120px auto; display: flex; flex-direction: row; justify-content: center }
+    
+        /*오른쪽 섹션*/
+    #right {width: 75%; height: auto; }
+        #right .sld_1 {background-image:url(../img/blueconer_02.png); position: relative; width: 100%;height: 500px; background-size:cover; 
+            background-repeat: no-repeat; background-position: center; }
+            #right .sld_1 {transform: translateX(-100px); transition: all 3s; opacity: 0;}
+            #right > .sld_1 > .text_1 {position:absolute; top: 40%; left: 36%;text-align: center;}
+            #right > .sld_1 > .text_1 > h1 {font-size: 3rem; line-height: 3rem; color: white; margin-bottom: 1rem;text-shadow: 4px 4px 5px rgb(44, 54, 110)}
+            #right > .sld_1 > .text_1 > p {font-size: 1.5rem; line-height: 2rem; color: white; text-shadow: 4px 4px 5px rgb(44, 54, 110)}
+            
+        
+        #right .sld_2{background-image:url(../img/blueconer_03.png); position: relative; width: 100%;height: 500px; background-size:cover; 
+            background-repeat: no-repeat; background-position: center;}
+            #right .sld_2{transform: translateX(100px); transition: all 2s; opacity: 0;}
+            #right > .sld_2 > .text_2 {position:absolute; top: 28%; left: 1%;text-align: left;
+                padding: 0 2rem;}
+            #right > .sld_2 > .text_2 > p {font-size: 1.2rem; line-height: 2rem; color: white; text-shadow: 4px 4px 5px rgb(44, 54, 110)}
+
+        #right .sld_3{width: 100%;height: 500px; display: flex; flex-direction: row;}
+            #right > .sld_3 > .photo_1 {width: 50%; background-image: url(../img/bluecorner_2.jpg);}
+            #right > .sld_3 > .photo_1 {transform: translateX(-100px); transition: all 2s; opacity: 0;}
+            #right > .sld_3 > .text_3 {width: 50%; position: relative;} 
+            #right > .sld_3 > .text_3 > .text_3_1 {width: 80%; position: absolute; top: 30%; left: 12%;} 
+            #right > .sld_3 > .text_3 > .text_3_1 >h2 {font-size: 2rem; line-height: 2rem; color: coral; margin-bottom: 2rem; text-shadow: 4px 4px 5px #ddd; }
+            #right > .sld_3 > .text_3 > .text_3_1 >p {font-size: 1.2rem; line-height: 2rem; color: gray; text-shadow: 4px 4px 5px #ddd;}
+            
+        #right .sld_4{width: 100%;height: 500px; display: flex; flex-direction: row;}
+            #right > .sld_4 > .photo_2 {width: 50%; background-image: url(../img/blueconer_04.png); background-size: cover;}
+            #right > .sld_4 > .photo_2 {transform: translateX(100px); transition: all 2s; opacity: 0;}
+            #right > .sld_4 > .text_4 {width: 50%; position: relative;} 
+            #right > .sld_4 > .text_4 > .text_4_1 {width: 80%; position: absolute; top: 30%; left: 10%;} 
+            #right > .sld_4 > .text_4 > .text_4_1 >p {font-size: 1.2rem; line-height: 2rem; color: gray; text-shadow: 4px 4px 5px #ddd;}
+
+        #right .sld_5{width: 100%;height: 500px; display: flex; flex-direction: row;}
+            #right > .sld_5 > .photo_3 {width: 50%; background-image: url(../img/blueconer_03.png); background-size: cover;
+                transform: translateX(-100px); transition: all 2s; opacity: 0;}
+            #right > .sld_5 > .text_5 {width: 50%; position: relative;} 
+            #right > .sld_5 > .text_5 > .text_5_1 {width: 80%; position: absolute; top: 40%; left: 12%;} 
+            #right > .sld_5 > .text_5 > .text_5_1 >p {font-size: 1.2rem; line-height: 2rem; color: gray; text-shadow: 4px 4px 5px #ddd;}
+            
+        #right .sld_6{width: 100%;height: 500px; display: flex; flex-direction: row; margin-bottom: 4rem;}
+            #right > .sld_6 > .photo_4 {width: 50%; background-image: url(../img/blueconer_06.png); background-size: cover;
+                transform: translateX(100px); transition: all 2s; opacity: 0;}
+            #right > .sld_6 > .text_6 {width: 50%; position: relative;} 
+            #right > .sld_6 > .text_6 > .text_6_1 {width: 80%; position: absolute; top: 24%; left: 10%;} 
+            #right > .sld_6 > .text_6 > .text_6_1 >h2 {font-size: 2rem; line-height: 2rem; color: coral; margin-bottom: 2rem; text-shadow: 4px 4px 5px #ddd;}
+            #right > .sld_6 > .text_6 > .text_6_1 >p {font-size: 1.2rem; line-height: 2rem; color: gray; text-shadow: 4px 4px 5px #ddd;}
+
+        #right .touch_btn {height: 100px; background-image: url(../img/blueconer_03.png);background-position: center;background-size: cover; text-align: left; 
+                padding: 0.5rem 1rem; border-radius: 5px; box-shadow: 5px 5px 20px rgba(92, 86, 85, 0.2);
+                background-color: #ddd; margin: 3rem 0; }
+            #right > a {font-size: 1rem; line-height:1.5rem ; color: white;}
+            #right .touch_btn:hover {background-size:110%; color: coral;}
+
+        .block {position: relative; width: 100%;height: auto; margin-bottom: 2rem; padding: 0 0 8px 0;}
+            .block > h1 {text-shadow: 4px 4px 5px #ddd; margin-bottom: 3rem; font-size: 2rem; text-align: center; color: coral;}
+            .block > p {text-shadow: 4px 4px 5px #ddd; margin-bottom: 3rem; font-size: 1.5rem; line-height: 2rem; text-align: center; color: darkgray;}
+            .block > p > a> span {font-size: 1.5rem; font-style: italic; color:coral; text-shadow: 4px 4px 5px #ddd;}
+        
+        .block > .layout_box1 {margin: 0 0 20px 0; display: flex; flex-direction: row;
+                justify-content: space-between;}
+            .block > .layout_box1 > article {display: flex;flex-direction: column; width: 28.8%;height: auto; margin: 0 ; padding: 1.6% 1.6%; 
+                background-color: white; position: relative; box-shadow: 5px 5px 20px rgba(92, 86, 85, 0.2) }
+            .block > .layout_box1 article .rei > img {position: absolute; top: -22px; right: 5%; z-index: 100;
+                box-shadow: 5px 5px #ddd; }
+            .block > .layout_box1 article > a {height: auto; text-decoration: none; color: white;}
+            .block > .layout_box1 article a > h3:hover {color: coral;}
+            .block > .layout_box1 article a > .umi {width:100%; height:216px; overflow: hidden; font-weight: normal; }
+            .block > .layout_box1 article a > h3 {color:darkgray; overflow: hidden; width: 100%;  text-align: left; 
+                line-height: 1.2rem; margin: 1rem 0 4rem 0;}
+            .block > .layout_box1 article a > .umi > img {width: 100%; transition: all 0.2s linear;}
+            .block > .layout_box1 article a > .umi > img:hover {transform: scale(1.4);}
+            .block > .layout_box1 article > button{width: 90%; height: 3rem; line-height: 2rem; text-align: center; background-color: coral; 
+                border-radius: 5px; border: none; text-decoration: none; position: absolute; bottom: 1rem; left: 50%; transform: translateX(-50%);
+                box-shadow: 5px 5px 20px rgba(92, 86, 85, 0.2); color:white;}
+            .block > .layout_box1 article > button:hover{background-color: #434343;cursor: pointer;}
+            
+    }
+        
+
+        

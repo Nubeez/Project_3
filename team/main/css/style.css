@@ -1,0 +1,1038 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 폰트넣기 */
+html,
+body {
+  position: relative;
+  height: 100%;
+  font-family: "locus_sangsang";
+}
+
+body {
+  background: #434343;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  #s_wrap {
+    width: 100%;
+    height: 66.8vw;
+    position: relative;
+    overflow: hidden;
+  }
+  .new_text h2 {
+    font-size: 4vw;
+  }
+  #slidetr {
+    position: absolute;
+    width: 23px;
+    height: 100px;
+    color: white;
+    font-size: 1vw;
+    font-weight: 900;
+    top: 35%;
+    right: 1%;
+    z-index: 4;
+  }
+  #maincontents {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 100vw;
+    z-index: 4;
+    color: #fff;
+    transform: translate(0, -55%);
+    transition: 0.5s;
+  }
+
+  .slide > li > img {
+    width: 100%;
+  }
+  .All_New {
+    width: 85px;
+    height: 20px;
+    float: right;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .All_New span {
+    color: white;
+    font-size: 1.1vh;
+    line-height: 20px;
+    margin-left: 5px;
+    font-family: "YESGothic-Regular";
+  }
+  .All_New img {
+    position: absolute;
+    right: 1%;
+    width: 18px;
+    margin-top: 1.5px;
+    z-index: 3;
+  }
+  #title2 h2 {
+    font-size: 4vw;
+    color: white;
+  }
+  .scroll_text {
+    /* width: 50%; */
+    height: 4vw;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    z-index: 4;
+  }
+  .scroll_text2 li {
+    font-family: "YESGothic-Regular";
+    color: white;
+    font-size: 2vw;
+    height: 10vw;
+  }
+  .scroll_text2 {
+    width: 90%;
+    /* max-width: 500px; */
+    display: flex;
+    /* flex-direction: column; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -84%);
+    z-index: 4;
+    justify-content: center;
+  }
+  #slideInner2 {
+    position: absolute;
+    transform: translate(0px, 5vw);
+    font-family: "GmarketSansMedium";
+  }
+  .momentNav {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .title {
+    width: 90%;
+    height: 70px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .main_btn {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    transform: translate(0%, 150%);
+    width: 8vw;
+    /* height: 6vw; */
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 2vw;
+    text-align: center;
+    z-index: 4;
+  }
+  .main_btn a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .block_box {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  .new_wrap {
+    width: 100%;
+  }
+  .new_box {
+    width: 90%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .footerBaneer_tx1 span {
+    width: 10vw;
+    height: 2vw;
+    display: block;
+    border: 2px solid white;
+    font-size: 2vw;
+    border-radius: 20px;
+    padding: 2px 0px 5px 5px;
+    margin: 5px 0px;
+    text-align: center;
+  }
+  .footerBaneer_tx2 span {
+    width: 16vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  #s_wrap {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .new_text h2 {
+    font-size: 1.5vw;
+  }
+  /* 슬라이드  pagination 카운트*/
+  #slidetr {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    color: white;
+    font-size: 1vw;
+    font-weight: 900;
+    top: 50%;
+    right: 1%;
+    z-index: 4;
+  }
+  #maincontents {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 100vw;
+    z-index: 4;
+    color: #fff;
+    transform: translate(0, -0%);
+    transition: 0.5s;
+  }
+
+  .slide > li > img {
+    width: 100%;
+    height: 100%;
+  }
+  .All_New {
+    width: 115px;
+    height: 20px;
+    float: right;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .All_New span {
+    color: white;
+    font-size: 1.5vh;
+    line-height: 20px;
+    margin-left: 5px;
+    font-family: "YESGothic-Regular";
+  }
+  .All_New img {
+    position: absolute;
+    right: 0.7%;
+    width: 20px;
+    z-index: 3;
+  }
+  #title2 h2 {
+    font-size: 1.5vw;
+    color: white;
+  }
+  .scroll_text {
+    width: 50%;
+    height: 4vw;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    z-index: 4;
+  }
+  .scroll_text2 li {
+    font-family: "YESGothic-Regular";
+    color: white;
+    font-size: 1.8vw;
+    height: 10vw;
+  }
+  .scroll_text2 {
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(100%, -50%);
+    z-index: 4;
+  }
+  #slideInner2 {
+    position: absolute;
+    transform: translate(0px, 2.2vw);
+    font-family: "GmarketSansMedium";
+  }
+  .momentNav {
+    width: 90%;
+    display: flex;
+  }
+  .title {
+    width: 90%;
+    height: 150px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .main_btn {
+    position: absolute;
+    bottom: -80%;
+    left: 0%;
+    width: 10vw;
+    height: 3vw;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 2vw;
+    padding: 3px 1px 0px 0px;
+    text-align: center;
+    z-index: 4;
+  }
+  .main_btn a {
+    margin: 10px;
+  }
+  .swiperBg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .block_box {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+  }
+  .new_box {
+    width: 90%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  .footerBaneer_tx1 span {
+    width: 10vw;
+    height: 2vw;
+    display: block;
+    border: 2px solid white;
+    font-size: 2vw;
+    border-radius: 20px;
+    padding: 5px 0px 10px 0px;
+    text-align: center;
+  }
+  .footerBaneer_tx2 span {
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  #s_wrap {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  .new_text h2 {
+    font-size: 1.5vw;
+    line-height: 50px;
+  }
+  /* 슬라이드  pagination 카운트*/
+  #slidetr {
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    color: white;
+    font-size: 1vw;
+    font-weight: 900;
+    top: 50%;
+    right: 1%;
+    z-index: 4;
+  }
+  #maincontents {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 100vw;
+    z-index: 4;
+    color: #fff;
+    transform: translate(0, -15%);
+    transition: 0.5s;
+  }
+
+  .slide > li > img {
+    width: 100%;
+    height: 100%;
+  }
+  .All_New {
+    width: 115px;
+    height: 20px;
+    float: right;
+    background-color: black;
+    border-radius: 10px;
+  }
+  .All_New span {
+    color: white;
+    font-size: 1.5vh;
+    line-height: 20px;
+    margin-left: 5px;
+    font-family: "YESGothic-Regular";
+  }
+  .All_New img {
+    position: absolute;
+    right: 0.7%;
+    width: 20px;
+    z-index: 3;
+  }
+  #title2 h2 {
+    font-size: 1.5vw;
+    color: white;
+  }
+  .scroll_text {
+    width: 50%;
+    height: 4vw;
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    z-index: 4;
+  }
+  .scroll_text2 li {
+    font-family: "YESGothic-Regular";
+    color: white;
+    font-size: 1.8vw;
+    height: 10vw;
+  }
+  .scroll_text2 {
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(100%, -50%);
+    z-index: 4;
+  }
+  #slideInner2 {
+    position: absolute;
+    transform: translate(0px, 1.5vw);
+    font-family: "GmarketSansMedium";
+  }
+  .momentNav {
+    width: 90%;
+    display: flex;
+  }
+  .title {
+    width: 90%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .main_btn {
+    position: absolute;
+    bottom: -45%;
+    left: 0%;
+    width: 10vw;
+    height: 2.5vw;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 3px 0px 0px 0px;
+    font-size: 2vw;
+    text-align: center;
+    z-index: 4;
+  }
+  .main_btn a {
+    margin: 10px;
+  }
+  .swiperBg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .block_box {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+  }
+  .new_box {
+    width: 90%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+  .footerBaneer_tx1 span {
+    width: 10vw;
+    height: 2vw;
+    display: block;
+    border: 2px solid white;
+    font-size: 2vw;
+    border-radius: 20px;
+    padding: 5px 0px 10px 0px;
+    text-align: center;
+  }
+  .footerBaneer_tx2 span {
+    width: 20vw;
+  }
+
+  /* 공통부분 */
+}
+#wraper {
+  width: 100%;
+}
+
+.slide {
+  width: 400vw;
+}
+
+.slide > li {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slide li:first-child {
+  z-index: 3;
+}
+
+.slide li:nth-child(2) {
+  z-index: 2;
+}
+
+.slide li:last-child {
+  z-index: 1;
+}
+
+#scrollTop {
+  width: 90px;
+  height: 100px;
+  bottom: 150px;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+}
+
+#scrollTop img {
+  width: 70%;
+  height: 100px;
+}
+/* 슬라이드 메뉴바 폰트추가 */
+#mainbanner {
+  width: 100%;
+  height: 50px;
+  font-family: "ChosunBg";
+  color: white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 4;
+}
+
+.banner_one {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner_one > li {
+  width: 25%;
+  float: left;
+  position: relative;
+}
+
+/* 메뉴바 패딩으로 간격조절 */
+.banner_hover {
+  display: flex;
+  padding: 20px 15px;
+  position: relative;
+  font-size: 0.7vw;
+}
+
+.banner_bg {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgb(128, 128, 128, 0.6);
+  transform-origin: left;
+  animation: progress 5s 0s infinite forwards linear;
+}
+@keyframes progress {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.banner_hover > span {
+  width: 30px;
+}
+
+.main_btn:hover {
+  background-color: white;
+}
+
+.main_btn:hover a {
+  color: coral;
+}
+
+.main_btn a {
+  color: white;
+  text-decoration: none;
+  /* line-height: 32px; */
+}
+
+#textbox {
+  font-size: 3vw;
+}
+
+.txt_hide {
+  opacity: 0;
+}
+
+#textbox .view2 {
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  transform: translate(0, -50%);
+  transition: 1s;
+  opacity: 1;
+  z-index: 4;
+}
+
+#section1 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#title2 {
+  width: 90%;
+  height: 100px;
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title h2 {
+  font-size: 1.5vw;
+  color: white;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.momentNav li {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0px 10px;
+}
+.li_img img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+.li_img img {
+  transition: 0.5s;
+}
+.momentNav li > a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+.momentNav p {
+  font-size: 2vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
+  z-index: 4;
+}
+
+.li_img > img {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+
+  opacity: 0.5;
+}
+
+#slidetrx .view {
+  opacity: 1;
+}
+
+/* 슬라이드 메뉴 폰트넣는곳 */
+.slideInner1 {
+  position: absolute;
+  transition: all 0.5s;
+  font-family: "GmarketSansMedium";
+  transform: rotateY(0deg);
+  transform-origin: 50% 50%;
+  border: none;
+  opacity: 0;
+}
+
+.slideInner1::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  height: 1px;
+  top: auto;
+  bottom: -1px;
+  left: 0px;
+  background-color: white;
+  opacity: 0.5;
+}
+
+/* 섹션1 하단 슬라이드 시작 */
+.swiperBg {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.swiper {
+  width: 90%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.category {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-flow: column;
+  transition: 0.5s;
+}
+.category:hover {
+  transform: scale(0.98);
+  transition: 0.8s;
+}
+.category_img {
+  width: 100px;
+  height: 304px;
+}
+.category_title {
+  width: 100%;
+  height: 10vh;
+  margin-top: 10px;
+  text-align: left;
+  color: white;
+}
+/* 버튼 크기 조절해야함 */
+.category_info {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 15%;
+  right: 1%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+/* 슬라이더 효과 추가 */
+
+.on {
+  background-color: black;
+  border-color: gold;
+  transform: scale(1.1);
+}
+.on:active::before {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  content: " ";
+  transition: all 5s;
+  background-color: rgba(255, 0, 0);
+}
+
+.on:active::before {
+  width: 0%;
+}
+.category_info img {
+  width: 100%;
+}
+
+/* .swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+} */
+
+.button-next img {
+  width: 2%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-300%, -150%);
+}
+.button-prev img {
+  width: 2%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-450%, -154%);
+}
+.disabled {
+  opacity: 0.2;
+}
+#section2 {
+  width: 100%;
+  background-color: #474747;
+  margin: 0 auto;
+}
+
+.flow_wrap {
+  display: flex;
+  width: 90%;
+  overflow: hidden;
+  margin: 0px auto;
+}
+.flow_wrap .flow_list {
+  display: flex;
+}
+.flow_wrap .flow_list > li {
+  font-size: 2vw;
+  color: #fff;
+  padding: 20px;
+}
+@keyframes flowRolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.block_wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.block_box {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.box_text {
+  position: relative;
+  transition: 0.5s;
+}
+.box_text:hover {
+  transform: scale(0.98);
+  transition: 0.7s;
+}
+.box_text img {
+  width: 99%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.box_text > span {
+  position: absolute;
+  font-size: 11pt;
+  color: white;
+  top: 0;
+  left: 0;
+  transform: translate(30%, 100%);
+}
+.new_wrap {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.All_New:hover span {
+  color: coral;
+}
+
+.new_box {
+  width: 90%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  margin: 0 auto;
+}
+.Plus_color {
+  color: coral;
+}
+.new_img {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.new_text span {
+  color: white;
+  font-size: 0.9vw;
+}
+.new_img img {
+  width: 60%;
+  height: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.new_text {
+  width: 30%;
+}
+.new_text::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-bottom: 1px solid bisque;
+  z-index: 4;
+}
+#section3 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: black;
+}
+.scroll_bg {
+  height: 55vw;
+  position: relative;
+}
+.scroll_bg::before {
+  content: "";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid bisque;
+  z-index: 4;
+}
+.scroll_bg img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.scroll_text h2 {
+  font-size: 6vw;
+  color: white;
+  font-family: "YESGothic-Regular";
+}
+
+#section4 {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: black;
+}
+.footerBanner_wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footerBanner {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.footerBanner_img {
+  width: 100%;
+  opacity: 0.8;
+}
+.footerBaneer_tx1 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  transform: translate(0%, -50%);
+  color: white;
+}
+.footerBaneer_tx2 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0%, -50%);
+  color: white;
+}
+.footerBaneer_tx1 h2 {
+  font-size: 3vw;
+  line-height: 3vw;
+}
+.footerBaneer_tx1 h4 {
+  font-size: 1.5vw;
+  line-height: 5vw;
+}
+.footerBaneer_tx1 span:hover {
+  color: coral;
+  cursor: pointer;
+  transform: scale(0.95);
+}
+.footerBaneer_tx1 span {
+  transition: 0.5s;
+}
+/* } */
