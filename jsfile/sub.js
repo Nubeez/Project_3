@@ -42,40 +42,7 @@ $(function () {
 });
 
 
-// // 호텔 스크롤 이벤트
-// $(document).ready(function () {
-//     $(window).scroll(function () {
-//         if ($(this).scrollTop() > 6100) {
-//             $('.hotel_1').addClass('active1');
-//         } else {
-//             $('.hotel_1').removeClass('active1');
-//         }
-
-//         if ($(this).scrollTop() > 7500) {
-//             $('.hotel_2').addClass('active1');
-//         } else {
-//             $('.hotel_2').removeClass('active1');
-//         }
-
-//         if ($(this).scrollTop() > 8700) {
-//             $('.hotel_3').addClass('active1');
-//         } else {
-//             $('.hotel_3').removeClass('active1');
-//         }
-
-//         if ($(this).scrollTop() > 10000) {
-//             $('.hotel_4').addClass('active1');
-//         } else {
-//             $('.hotel_4').removeClass('active1');
-//         }
-
-//         if ($(this).scrollTop() > 11200) {
-//             $('.hotel_5').addClass('active1');
-//         } else {
-//             $('.hotel_5').removeClass('active1');
-//         }
-//     });
-// });
+// 스크롤에 따른 이미지 나타내기
 
 $(document).ready(function () {
     $(window).scroll(function () {
