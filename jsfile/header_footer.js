@@ -19,6 +19,26 @@ $(function () {
     nsj();
   });
 });
+$(function () {
+  function nsj() {
+    if (window.innerWidth > 1199) {
+      $(".spMenu_btn_sj").hide();
+      $("#side-nav_sj").hide();
+      $("header .sns_main_sj").show();
+      $(".nav_sj, .nav_R_sj .navL_sj").show();
+    } else {
+      $(".spMenu_btn_sj").show();
+      $("header .sns_main_sj").hide();
+      $(".nav_sj, .nav_R_sj .navL_sj").hide();
+    }
+  }
+
+  nsj();
+
+  $(window).resize(function () {
+    nsj();
+  });
+});
 
 // 미디어 중간, 모바일 사이즈 메뉴바
 // 버튼 클릭 시 왼쪽에서 메뉴바 나오는 효과
@@ -71,6 +91,14 @@ $(function () {
 
   // 오버 효과
   $(".nav_sj .navL_sj .navL_M_sj li, header .logo_1_sj, .sns_sj a, header .spMenu_btn_sj ul").hover(
+    function () {
+      $(".cursor_sj").addClass("active");
+    },
+    function () {
+      $(".cursor_sj").removeClass("active");
+    }
+  );
+  $(".nav_sj .navL_sj .navL_M_sj li, header .logo_1_sj, .sns_main_sj a, header .spMenu_btn_sj ul").hover(
     function () {
       $(".cursor_sj").addClass("active");
     },
