@@ -33,6 +33,7 @@ a {
     position: relative;
     overflow: hidden;
   }
+  /* 슬라이드 가운데조절 */
   .banner_hover {
     display: flex;
     position: relative;
@@ -236,6 +237,7 @@ a {
     position: relative;
     overflow: hidden;
   }
+  /* 슬라이드 가운데조절 */
   .banner_hover {
     display: flex;
     position: relative;
@@ -427,6 +429,7 @@ a {
     position: relative;
     overflow: hidden;
   }
+  /* 슬라이드 가운데조절 */
   .banner_hover {
     display: flex;
     position: relative;
