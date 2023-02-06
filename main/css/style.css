@@ -33,6 +33,20 @@ a {
     position: relative;
     overflow: hidden;
   }
+  .button-next img {
+    width: 8%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, -100%);
+  }
+  .button-prev img {
+    width: 8%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-220%, -104%);
+  }
   .banner_one {
     position: absolute;
     bottom: 0;
@@ -209,6 +223,20 @@ a {
     position: relative;
     overflow: hidden;
   }
+  .button-next img {
+    width: 5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-140%, -100%);
+  }
+  .button-prev img {
+    width: 5%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-300%, -104%);
+  }
   .new_text h2 {
     font-size: 1.5vw;
   }
@@ -367,6 +395,20 @@ a {
     height: 100vh;
     position: relative;
     overflow: hidden;
+  }
+  .button-next img {
+    width: 3%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-320%, -100%);
+  }
+  .button-prev img {
+    width: 3%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-480%, -104%);
   }
   .new_text h2 {
     font-size: 1.5vw;
@@ -845,20 +887,6 @@ a {
   display: none;
 } */
 
-.button-next img {
-  width: 2%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-300%, -150%);
-}
-.button-prev img {
-  width: 2%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-450%, -154%);
-}
 .disabled {
   opacity: 0.2;
 }
