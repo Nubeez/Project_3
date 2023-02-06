@@ -142,7 +142,6 @@ header .logo_1_sj {
 header .logo_1_sj img {
   width: 4vw;
   height: 5vw;
-  margin: 17px 0 0 60px;
 }
 
 /* 네비게이션 */
@@ -652,7 +651,7 @@ footer .nav_R_sj .navR_sj .navR_M_sj li:nth-of-type(2) {
 
   /* 헤더 시작 */
   header {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 8vw;
@@ -722,7 +721,7 @@ footer .nav_R_sj .navR_sj .navR_M_sj li:nth-of-type(2) {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #434343;
+    background-color: #fff;
   }
 
   .spMenu_btn_sj > ul > li::after {
@@ -1345,7 +1344,7 @@ footer .nav_R_sj .navR_sj .navR_M_sj li:nth-of-type(2) {
 
   /* 헤더 시작 */
   header {
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     height: 8vw;
@@ -1415,7 +1414,7 @@ footer .nav_R_sj .navR_sj .navR_M_sj li:nth-of-type(2) {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #434343;
+    background-color: #fff;
   }
 
   .spMenu_btn_sj > ul > li::after {
@@ -1920,8 +1919,8 @@ footer .nav_R_sj .navR_sj .navR_M_sj li:nth-of-type(2) {
     height: 100%;
     background-color: #434343;
     position: fixed;
-    opacity: 0.9;
-    z-index: 4;
+    /* opacity: 0.9; */
+    z-index: 5;
     top: 8vw;
     display: none;
   }
