@@ -33,6 +33,21 @@ a {
     position: relative;
     overflow: hidden;
   }
+  .banner_one {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 34px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .banner_hover {
+    display: flex;
+    padding: 11px 15px;
+    position: relative;
+    font-size: 0.7vw;
+  }
   .new_text h2 {
     font-size: 4vw;
   }
