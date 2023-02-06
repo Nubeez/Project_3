@@ -33,6 +33,13 @@ a {
     position: relative;
     overflow: hidden;
   }
+  .banner_hover {
+    display: flex;
+    position: relative;
+    font-size: 0.7vw;
+    align-items: center;
+    padding: 10px;
+  }
   .banner_one {
     position: absolute;
     bottom: 0;
@@ -67,12 +74,6 @@ a {
     height: 34px;
 
     background-color: rgba(0, 0, 0, 0.5);
-  }
-  .banner_hover {
-    display: flex;
-    height: 100%;
-    position: relative;
-    font-size: 0.7vw;
   }
   .new_text h2 {
     font-size: 4vw;
@@ -234,6 +235,13 @@ a {
     height: 100vh;
     position: relative;
     overflow: hidden;
+  }
+  .banner_hover {
+    display: flex;
+    position: relative;
+    font-size: 0.7vw;
+    align-items: center;
+    padding: 10px;
   }
   .banner_one {
     position: absolute;
@@ -418,6 +426,12 @@ a {
     height: 100vh;
     position: relative;
     overflow: hidden;
+  }
+  .banner_hover {
+    display: flex;
+    position: relative;
+    font-size: 0.7vw;
+    padding: 15px 0;
   }
   .banner_one {
     position: absolute;
@@ -660,12 +674,6 @@ a {
 }
 
 /* 메뉴바 패딩으로 간격조절 */
-.banner_hover {
-  display: flex;
-  position: relative;
-  font-size: 0.7vw;
-  align-items: center;
-}
 
 .banner_bg {
   position: absolute;
