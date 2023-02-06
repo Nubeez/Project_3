@@ -58,7 +58,7 @@ a {
   }
   .banner_hover {
     display: flex;
-    padding: 11px 15px;
+    padding: 9px 15px;
     position: relative;
     font-size: 0.7vw;
   }
@@ -639,7 +639,7 @@ a {
 /* 메뉴바 패딩으로 간격조절 */
 .banner_hover {
   display: flex;
-  padding: 20px 15px;
+  padding: 0, 15px;
   position: relative;
   font-size: 0.7vw;
 }
