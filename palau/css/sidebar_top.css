@@ -6,7 +6,7 @@
     a{text-decoration: none;}
 
     #wrap {width: 100%;margin: 0 auto;}
-    section {width: 90%; height: auto; margin: 120px auto; display: flex; flex-direction: row; justify-content: space-between }
+    section {width: 90%; height: auto; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-between }
    
      /*탑 슬라이드*/
      #topslide{height: auto;}
@@ -17,8 +17,8 @@
     /*왼쪽 섹션*/
     #left { width: 25%; height: auto; color: darkgray; background-color: #434343;}
         #left .nav {position: sticky; width: 90%;top:100px; margin:2rem 0.46rem; height: auto;}
-        #left .nav > .logo > a > h1 {font-size: 1.5rem; line-height: 2rem; text-align: center; color: coral;}
-        #left .nav > .logo > h2 {font-size: 0.6rem; line-height: 2rem; text-align: center; color: darkgray;}
+        #left .nav > .logo > a > h1 {font-size: 1.5rem; line-height: 3rem; text-align: center; color: coral;}
+        #left .nav > .logo > h2 {font-size: 0.6rem; line-height: 3rem; text-align: center; color: darkgray;}
         #left .nav > h3 {margin: 1rem 0; text-align:left; padding: 0.5rem; }
         #left .nav > h3:hover {color: coral;}
         #left .nav > h2 {text-align: center; color: coral; margin:2rem 0; padding: 0 0.5rem;}
@@ -51,7 +51,7 @@
 
     @media(min-width:1200px){
         /*왼쪽 섹션*/
-    #left {margin: 0 auto; width: 25%; height: auto; color: darkgray; background-color: #434343;}
+    #left {margin:0 auto; width: 25%; height: auto; color: darkgray; background-color: #434343;}
         #left .nav {position: sticky; width: 90%;top:100px; margin: 2rem auto; height: auto; margin-bottom: 3rem;}
         #left .nav > .logo > h1 {font-size: 3rem; line-height: 3rem; text-align: center; color: coral;}
         #left .nav > .logo > h2 {font-size: 1.5rem; line-height: 3rem; text-align: center; color: darkgray;}

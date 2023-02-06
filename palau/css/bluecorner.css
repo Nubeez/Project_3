@@ -6,7 +6,7 @@
     a{text-decoration: none;}
 
     #wrap {width: 100%;margin: 0 auto;}
-    section {width: 90%; height: auto; margin: 120px auto; display: flex; flex-direction: row; justify-content: space-between }
+    section {width: 90%; height: auto; margin: 0 auto; display: flex; flex-direction: row; justify-content: space-between }
    
     /*오른쪽 섹션*/
     #right {width: 75%; height: auto; }
@@ -91,7 +91,7 @@
     a{text-decoration: none;}
 
     #wrap {width: 100%;margin: 0 auto;}
-    section {width: 90%; height: auto; margin: 120px auto; display: flex; flex-direction: row; justify-content: center }
+    section {width: 90%; height: auto; margin: 0 auto; display: flex; flex-direction: row; justify-content: center }
    
             /*오른쪽 섹션*/
     #right {width: 75%; height: auto; }
@@ -176,7 +176,7 @@
     a{text-decoration: none;}
 
     #wrap {width: 100%;margin: 0 auto;}
-    section {width: 90%; height: auto; margin: 120px auto; display: flex; flex-direction: row; justify-content: center }
+    section {width: 90%; height: auto; margin: 0 auto; display: flex; flex-direction: row; justify-content: center }
     
         /*오른쪽 섹션*/
     #right {width: 75%; height: auto; }
