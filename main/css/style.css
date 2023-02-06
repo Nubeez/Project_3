@@ -662,9 +662,9 @@ a {
 /* 메뉴바 패딩으로 간격조절 */
 .banner_hover {
   display: flex;
-  padding: 0, 15px;
   position: relative;
   font-size: 0.7vw;
+  align-items: center;
 }
 
 .banner_bg {
