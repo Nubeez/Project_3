@@ -434,7 +434,7 @@ a {
     display: flex;
     position: relative;
     font-size: 0.7vw;
-    padding: 15px 0;
+    padding: 15px 10px;
   }
   .banner_one {
     position: absolute;
