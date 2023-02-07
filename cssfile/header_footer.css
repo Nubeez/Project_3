@@ -3,7 +3,8 @@
 /* 문서 전체 폰트 적용 */
 @font-face {
   font-family: "locus_sangsang";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/locus_sangsang.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +16,7 @@
 }
 
 html {
-  /* font-size: 0.9vw; */
+  font-size: 0.9vw;
 }
 
 ul,
@@ -387,14 +388,14 @@ header .container .sns_sj ul li:nth-of-type(2) {
 /* 풋터 부분 */
 footer {
   width: 100%;
-  height: 6vw;
+  height: auto;
   background-color: rgb(0, 0, 0);
   z-index: 5;
 }
 
 /* 탑 버튼 */
 footer .topbtn_sj {
-  width: 6vw;
+  width: 5.5vw;
   height: 6vw;
   position: fixed;
   right: 0;
@@ -409,7 +410,6 @@ footer .topbtn_sj a {
 
 footer .topbtn_sj a i {
   font-size: 6vw;
-  padding-left: 5px;
   color: darkgray;
 }
 
@@ -787,7 +787,7 @@ footer .nav_R_sj .navR_sj .navR_M_sj li:nth-of-type(2) {
 
   .nav_sj .navL_sj .navL_M_sj li {
     box-sizing: border-box;
-    background-color: #333;
+    /* background-color: #333; */
     font-size: 1.5rem;
     border-bottom: 1px solid #fff;
   }
@@ -993,14 +993,14 @@ footer .nav_R_sj .navR_sj .navR_M_sj li:nth-of-type(2) {
   /* 풋터 부분 */
   footer {
     width: 100%;
-    height: 8vw;
+    height: auto;
     background-color: rgb(0, 0, 0);
     z-index: 5;
   }
 
   /* 탑 버튼 */
   footer .topbtn_sj {
-    width: 8vw;
+    width: 7.5vw;
     height: 8vw;
     position: fixed;
     right: 0;
@@ -1015,7 +1015,6 @@ footer .nav_R_sj .navR_sj .navR_M_sj li:nth-of-type(2) {
 
   footer .topbtn_sj a i {
     font-size: 8vw;
-    padding-left: 5px;
     color: darkgray;
   }
 
@@ -1037,7 +1036,7 @@ footer .nav_R_sj .navR_sj .navR_M_sj li:nth-of-type(2) {
   footer .logo_1_sj img {
     width: 6vw;
     height: 7vw;
-    margin: 6px 0 0 32px;
+    margin: 10px 0 0 32px;
   }
 
   /* 네비게이션 */
@@ -1682,14 +1681,14 @@ footer .nav_R_sj .navR_sj .navR_M_sj li:nth-of-type(2) {
   /* 풋터 부분 */
   footer {
     width: 100%;
-    height: 8vw;
+    height: auto;
     background-color: rgb(0, 0, 0);
     z-index: 5;
   }
 
   /* 탑 버튼 */
   footer .topbtn_sj {
-    width: 8vw;
+    width: 7.5vw;
     height: 8vw;
     position: fixed;
     right: 0;
@@ -1704,7 +1703,6 @@ footer .nav_R_sj .navR_sj .navR_M_sj li:nth-of-type(2) {
 
   footer .topbtn_sj a i {
     font-size: 8vw;
-    padding-left: 5px;
     color: darkgray;
   }
 
@@ -1726,7 +1724,7 @@ footer .nav_R_sj .navR_sj .navR_M_sj li:nth-of-type(2) {
   footer .logo_1_sj img {
     width: 6vw;
     height: 7vw;
-    margin: 5px 0 0 60px;
+    margin: 10px 0 0 60px;
   }
 
   /* 네비게이션 */

@@ -32,10 +32,6 @@
     border-right: 1px dashed lightgray;
 }
 
-#section .container #contents_M .section_L div:nth-of-type(2) {
-    position: fixed;
-}
-
 #section .container #contents_M .section_L h1 {
     position: absolute;
     top: 7px;
@@ -62,31 +58,6 @@
 #section .container #contents_M .section_L h3 {
     color: coral;
     font-size: 2vw;
-}
-
-
-#section .container #contents_M .section_L .question {
-    position: absolute;
-    top: -3px;
-    right: -125px;
-    width: 81px;
-    height: 81px;
-    z-index: 1;
-    display: block;
-}
-
-#section .container #contents_M .section_L .question a {
-    width: 100%;
-    height: 63%;
-    font-size: 0.7rem;
-    padding: 31px 12px 0 0;
-    text-align: center;
-    display: block;
-    /* background: url(../subimg/serifu.png) no-repeat 0px 0px; */
-}
-
-#section .container #contents_M .section_L .question a span {
-    color: coral;
 }
 
 
@@ -195,35 +166,6 @@
     background-color: coral;
     transition: all 0.8s ease;
     cursor: pointer;
-}
-
-
-/* 왼쪽 request 부분 */
-#section .section_L .request {
-    width: 20vw;
-    height: 8vw;
-    margin: 20px auto;
-    background-color: #ddd;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    padding: 15px;
-    font-size: 1rem;
-    border-radius: 10px;
-}
-
-#section .section_L .request .request_1 a {
-    color: #434343;
-}
-
-#section .section_L .request .request_2 a {
-    color: #434343;
-}
-
-#section .section_L i {
-    padding-right: 5px;
 }
 
 
@@ -1236,37 +1178,13 @@
 }
 
 #section .container #contents_M .section_L h4 span {
+    font-size: 1.5rem;
     color: darkgray;
 }
 
 #section .container #contents_M .section_L h3 {
     color: coral;
-    font-size: 2vw;
-}
-
-
-#section .container #contents_M .section_L .question {
-    position: absolute;
-    top: -3px;
-    right: -125px;
-    width: 81px;
-    height: 81px;
-    z-index: 1;
-    display: block;
-}
-
-#section .container #contents_M .section_L .question a {
-    width: 100%;
-    height: 63%;
-    font-size: 0.7rem;
-    padding: 31px 12px 0 0;
-    text-align: center;
-    display: block;
-    /* background: url(../subimg/serifu.png) no-repeat 0px 0px; */
-}
-
-#section .container #contents_M .section_L .question a span {
-    color: coral;
+    font-size: 2rem;
 }
 
 
@@ -1284,6 +1202,7 @@
 }
 
 .section_L .intro span {
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -1305,7 +1224,7 @@
     align-items: center;
     box-sizing: border-box;
     padding: 1px;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 #section .section_L .slide1 ul li {
@@ -1333,41 +1252,6 @@
 }
 
 
-/* 왼쪽 request 부분 */
-#section .section_L .request {
-    width: 20vw;
-    height: 30vw;
-    text-align: left;
-    margin: 20px auto;
-    background-color: #ddd;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    padding: 4px;
-    font-size: 1rem;
-    border-radius: 10px;
-}
-
-#section .section_L .request_1,
-#section .section_L .request_2 {
-    width: 90%;
-} 
-
-#section .section_L .request .request_1 a {
-    color: #434343;
-}
-
-#section .section_L .request .request_2 a {
-    color: #434343;
-}
-
-#section .section_L i {
-    padding-right: 5px;
-}
-
-
 /* 섹션 오른쪽 */
 #section .container #contents_M .section_R {
     width: 75%;
@@ -1381,19 +1265,19 @@
 /* 이미지 전환 슬라이더 */
 #slidewrap {
     width: 87%;
-    height: 300px;
+    height: 200px;
     margin: 50px auto;
     position: relative;
     overflow: hidden;
 }
 
 #slidewrap .slide {
-    width: 3300px;
+    width: 700%;
 }
 
 #slidewrap .slide li {
-    width: 1100px;
-    height: 300px;
+    width: 14.28%;
+    height: 200px;
     float: left;
 }
 
@@ -1416,6 +1300,7 @@
     width: 15vw;
     height: 3vw;
     line-height: 3vw;
+    font-size: 1.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1437,12 +1322,12 @@
     position: absolute;
     top: 50%;
     display: block;
-    font-size: 38px;
+    font-size: 30px;
     color: #fff;
-    line-height: 40px;
+    line-height: 30px;
     background: rgba(0, 0, 0, 0.6);
     cursor: pointer;
-    height: 50px;
+    height: 40px;
     transform: translateY(-50%);
 }
 
@@ -1622,15 +1507,15 @@
 
 #Active .active .image h3 {
     margin-bottom: 5px;
-    font-size: 3.5rem;
+    font-size: 1.7rem;
     color: white;
 }
 
 #Active .active .image a {
-    width: 16vw;
+    width: 14vw;
     border: 1px solid white;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.4rem;
     box-sizing: border-box;
     padding: 3px;
     border-radius: 30px;
@@ -1678,12 +1563,12 @@
 }
 
 #Camping .camping .campingintro h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: coral
 }
 
 #Camping .camping .campingintro p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -1724,12 +1609,12 @@
 }
 
 #Bird .bird .birdintro h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: coral
 }
 
 #Bird .bird .birdintro p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -1775,12 +1660,12 @@
 }
 
 #Waterfall .waterfall .waterfallintro h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: coral
 }
 
 #Waterfall .waterfall .waterfallintro p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -1821,12 +1706,12 @@
 }
 
 #Nature .nature .natureintro h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: coral
 }
 
 #Nature .nature .natureintro p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -1867,12 +1752,12 @@
 }
 
 #Kayaking .kayaking .kayakingintro h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: coral
 }
 
 #Kayaking .kayaking .kayakingintro p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -1913,12 +1798,12 @@
 }
 
 #Sailing .sailing .sailingintro h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: coral
 }
 
 #Sailing .sailing .sailingintro p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -1959,12 +1844,12 @@
 }
 
 #Aerial .aerial .aerialintro h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: coral
 }
 
 #Aerial .aerial .aerialintro p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -2005,12 +1890,12 @@
 }
 
 #Gallery .gallery .galleryintro h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: coral
 }
 
 #Gallery .gallery .galleryintro p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -2078,14 +1963,14 @@
 
 .hotel_1 h5 {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center;
     color: coral;
 }
 
 .hotel_1 .hotelintro {
     width: 100%;
-    height: 11vw;
+    height: 12vw;
     line-height: 1.7;
     background-color: white;
     box-sizing: border-box;
@@ -2093,7 +1978,7 @@
 }
 
 .hotel_1 .hotelintro p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -2133,14 +2018,14 @@
 
 .hotel_2 h5 {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center;
     color: coral;
 }
 
 .hotel_2 .hotelintro {
     width: 100%;
-    height: 11vw;
+    height: 12vw;
     line-height: 1.7;
     background-color: white;
     box-sizing: border-box;
@@ -2148,7 +2033,7 @@
 }
 
 .hotel_2 .hotelintro p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -2188,14 +2073,14 @@
 
 .hotel_3 h5 {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center;
     color: coral;
 }
 
 .hotel_3 .hotelintro {
     width: 100%;
-    height: 11vw;
+    height: 12vw;
     line-height: 1.7;
     background-color: white;
     box-sizing: border-box;
@@ -2203,7 +2088,7 @@
 }
 
 .hotel_3 .hotelintro p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -2243,14 +2128,14 @@
 
 .hotel_4 h5 {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center;
     color: coral;
 }
 
 .hotel_4 .hotelintro {
     width: 100%;
-    height: 11vw;
+    height: 12vw;
     line-height: 1.7;
     background-color: white;
     box-sizing: border-box;
@@ -2258,7 +2143,7 @@
 }
 
 .hotel_4 .hotelintro p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 
@@ -2298,14 +2183,14 @@
 
 .hotel_5 h5 {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center;
     color: coral;
 }
 
 .hotel_5 .hotelintro {
     width: 100%;
-    height: 11vw;
+    height: 12vw;
     line-height: 1.7;
     background-color: white;
     box-sizing: border-box;
@@ -2313,7 +2198,7 @@
 }
 
 .hotel_5 .hotelintro p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: darkgray;
 }
 }
@@ -2373,37 +2258,13 @@
 }
 
 #section .container #contents_M .section_L h4 span {
+    font-size: 1.5rem;
     color: darkgray;
 }
 
 #section .container #contents_M .section_L h3 {
     color: coral;
-    font-size: 2vw;
-}
-
-
-#section .container #contents_M .section_L .question {
-    position: absolute;
-    top: -3px;
-    right: -125px;
-    width: 81px;
-    height: 81px;
-    z-index: 1;
-    display: block;
-}
-
-#section .container #contents_M .section_L .question a {
-    width: 100%;
-    height: 63%;
-    font-size: 0.7rem;
-    padding: 31px 12px 0 0;
-    text-align: center;
-    display: block;
-    /* background: url(../subimg/serifu.png) no-repeat 0px 0px; */
-}
-
-#section .container #contents_M .section_L .question a span {
-    color: coral;
+    font-size: 2rem;
 }
 
 
@@ -2419,6 +2280,7 @@
 }
 
 .section_L .intro span {
+    font-size: 1rem;
     color: darkgray;
 }
 
@@ -2453,6 +2315,7 @@
 }
 
 #section .section_L .slide1 ul li a {
+    font-size: 1rem;
     color: #434343;
 }
 
@@ -2465,41 +2328,6 @@
     background-color: coral;
     transition: all 0.8s ease;
     cursor: pointer;
-}
-
-
-/* 왼쪽 request 부분 */
-#section .section_L .request {
-    width: 18vw;
-    height: 10vw;
-    text-align: left;
-    margin: 20px auto;
-    background-color: #ddd;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    padding: 5px;
-    font-size: 1rem;
-    border-radius: 10px;
-}
-
-#section .section_L .request_1,
-#section .section_L .request_2 {
-    width: 90%;
-} 
-
-#section .section_L .request .request_1 a {
-    color: #434343;
-}
-
-#section .section_L .request .request_2 a {
-    color: #434343;
-}
-
-#section .section_L i {
-    padding-right: 5px;
 }
 
 
@@ -2523,11 +2351,11 @@
 }
 
 #slidewrap .slide {
-    width: 3300px;
+    width: 700%;
 }
 
 #slidewrap .slide li {
-    width: 1100px;
+    width: 14.28%;
     height: 300px;
     float: left;
 }
@@ -2538,7 +2366,7 @@
 }
 
 #slidewrap a {
-    width: 15vw;
+    width: 13vw;
     height: 3vw;
     line-height: 3vw;
     position: absolute;
@@ -2548,9 +2376,10 @@
 }
 
 #slidewrap a p {
-    width: 15vw;
+    width: 13vw;
     height: 3vw;
     line-height: 3vw;
+    font-size: 1rem;
     position: absolute;
     top: 50%;
     left: 50%;
