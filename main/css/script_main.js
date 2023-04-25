@@ -129,11 +129,11 @@ $(function () {
     flowBannerAct();
 
     //반응형 :: 디바이스가 변경 될 때마다 배너 롤링 초기화
-    let oldWChk = window.innerWidth > 1279 ? "pc" : window.innerWidth > 767 ? "ta" : "mo";
+    let reset_rolling = window.innerWidth > 1279 ? "pc" : window.innerWidth > 767 ? "ta" : "mo";
     $(window).on("resize", function () {
-      let newWChk = window.innerWidth > 1279 ? "pc" : window.innerWidth > 767 ? "ta" : "mo";
-      if (newWChk != oldWChk) {
-        oldWChk = newWChk;
+      let restart_rolling = window.innerWidth > 1279 ? "pc" : window.innerWidth > 767 ? "ta" : "mo";
+      if (restart_rolling != reset_rolling) {
+        reset_rolling = restart_rolling;
         flowBannerAct();
       }
     });
